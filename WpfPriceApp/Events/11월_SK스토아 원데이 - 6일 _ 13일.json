@@ -1,0 +1,94 @@
+{
+  "eventName": "SK스토아 원데이 - 6일 / 13일",
+  "period": "",
+  "memo": "원본 시트: 11월",
+  "products": [
+    {
+      "name": "지니오 S 베이직",
+      "note": "",
+      "values": {
+        "salePrice": 69000.0,
+        "supplyPrice": 58650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 28340.0,
+        "cost": 101320.0,
+        "realCost": 72980.0,
+        "marginAmount": -18330.0,
+        "requestPlus": 22000.0,
+        "requestMinus": 20000.0,
+        "finalMargin": 3670.0,
+        "finalMarginRate": 0.06257459505541348,
+        "expectedQty": 15.0,
+        "expectedCost": 300000.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "쉐어 블랙",
+      "note": "",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -33830.2,
+        "requestPlus": 38000.0,
+        "requestMinus": 34545.454545454544,
+        "finalMargin": 4169.800000000003,
+        "finalMarginRate": 0.049551990493167,
+        "expectedQty": 7.0,
+        "expectedCost": 241818.18181818182
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "쉐어 모카",
+      "note": "",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -33830.2,
+        "requestPlus": 38000.0,
+        "requestMinus": 34545.454545454544,
+        "finalMargin": 4169.800000000003,
+        "finalMarginRate": 0.049551990493167,
+        "expectedQty": 8.0,
+        "expectedCost": 276363.63636363635
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    }
+  ]
+}

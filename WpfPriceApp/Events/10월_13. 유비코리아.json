@@ -1,0 +1,94 @@
+{
+  "eventName": "13. 유비코리아",
+  "period": "",
+  "memo": "원본 시트: 10월",
+  "products": [
+    {
+      "name": "지니오s 베이직",
+      "note": "대량구매",
+      "values": {
+        "salePrice": 79000.0,
+        "supplyPrice": 79000.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.0,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": 2020.0,
+        "requestPlus": 3000.0,
+        "requestMinus": 2727.272727272727,
+        "finalMargin": 5020.0,
+        "finalMarginRate": 0.06354430379746835,
+        "expectedQty": 5.0,
+        "expectedCost": 13636.363636363636
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 그레이",
+      "note": "대량구매",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 99000.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.0,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": 5620.0,
+        "requestPlus": 1000.0,
+        "requestMinus": 909.090909090909,
+        "finalMargin": 6620.0,
+        "finalMarginRate": 0.06686868686868687,
+        "expectedQty": 9.0,
+        "expectedCost": 8181.818181818181
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "자니오 S 터치 실버",
+      "note": "노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 99000.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.0,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": 5620.0,
+        "requestPlus": 1000.0,
+        "requestMinus": 909.090909090909,
+        "finalMargin": 6620.0,
+        "finalMarginRate": 0.06686868686868687,
+        "expectedQty": 0.0,
+        "expectedCost": 0.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    }
+  ]
+}

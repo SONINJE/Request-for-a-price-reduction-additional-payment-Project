@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>WpfPriceApp</RootNamespace>
+    <AssemblyName>WpfPriceApp</AssemblyName>
+    <Platforms>x64</Platforms>
+    <LangVersion>latest</LangVersion>
+    <!-- 한국어 전용 프로그램이므로 다른 언어의 위성 리소스(cs/de/es/... 등) 를 배포에서 제외한다. -->
+    <SatelliteResourceLanguages>ko</SatelliteResourceLanguages>
+    <NeutralLanguage>ko</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- PriceCalcEngine 프로젝트를 x64 로 빌드하면 생성되는 DLL 을 출력 폴더로 복사한다.
+         (아래 상대경로는 두 프로젝트가 같은 솔루션 폴더 아래 나란히 있다고 가정) -->
+    <None Include="..\PriceCalcEngine\x64\$(Configuration)\PriceCalcEngine.dll"
+          Condition="Exists('..\PriceCalcEngine\x64\$(Configuration)\PriceCalcEngine.dll')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>PriceCalcEngine.dll</Link>
+    </None>
+
+    <!-- 초기 샘플 행사 JSON 파일들을 실행 폴더의 Events/ 밑으로 함께 배포 -->
+    <None Include="Events\**\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Events\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </None>
+  </ItemGroup>
+
+</Project>

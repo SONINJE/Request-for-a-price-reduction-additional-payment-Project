@@ -1,0 +1,150 @@
+{
+  "eventName": "카카오 돌체구스토 단독  라이브(12/1)",
+  "period": "",
+  "memo": "원본 시트: 12월",
+  "products": [
+    {
+      "name": "지니오 S 베이직",
+      "note": "노출",
+      "values": {
+        "salePrice": 69000.0,
+        "supplyPrice": 62100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -14880.0,
+        "requestPlus": 17000.0,
+        "requestMinus": 15454.545454545454,
+        "finalMargin": 2120.0,
+        "finalMarginRate": 0.03413848631239936,
+        "expectedQty": 300.0,
+        "expectedCost": 4636363.636363636
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 실버",
+      "note": "노출",
+      "values": {
+        "salePrice": 109000.0,
+        "supplyPrice": 92650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -730.0,
+        "requestPlus": 4000.0,
+        "requestMinus": 3636.363636363636,
+        "finalMargin": 3270.0,
+        "finalMarginRate": 0.03529411764705882,
+        "expectedQty": 150.0,
+        "expectedCost": 545454.5454545454
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 아트패키지",
+      "note": "노출",
+      "values": {
+        "salePrice": 129000.0,
+        "supplyPrice": 109650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": 5030.0,
+        "requestMinus": 0.0,
+        "finalMargin": 5030.0,
+        "finalMarginRate": 0.045873233014135886,
+        "expectedQty": 50.0,
+        "expectedCost": 0.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -16830.199999999997,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 3169.800000000003,
+        "finalMarginRate": 0.031337617399901166,
+        "expectedQty": 50.0,
+        "expectedCost": 909090.9090909091
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -16830.199999999997,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 3169.800000000003,
+        "finalMarginRate": 0.031337617399901166,
+        "expectedQty": 50.0,
+        "expectedCost": 909090.9090909091
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    }
+  ]
+}

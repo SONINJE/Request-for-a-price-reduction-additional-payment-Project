@@ -1,0 +1,123 @@
+{
+  "eventName": "카카오선물하기 포미위크 12/2~12/8",
+  "period": "",
+  "memo": "원본 시트: 11월",
+  "products": [
+    {
+      "name": "지니오s 베이직",
+      "note": "노출",
+      "values": {
+        "salePrice": 69000.0,
+        "supplyPrice": 60720.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.12,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -16260.0,
+        "requestPlus": 18000.0,
+        "requestMinus": 16363.636363636362,
+        "finalMargin": 1740.0,
+        "finalMarginRate": 0.02865612648221344,
+        "expectedQty": 100.0,
+        "expectedCost": 1636363.6363636362
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "썸머팩",
+      "note": "노출",
+      "values": {
+        "salePrice": 109000.0,
+        "supplyPrice": 95920.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.12,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -13860.0,
+        "requestPlus": 16000.0,
+        "requestMinus": 14545.454545454544,
+        "finalMargin": 2140.0,
+        "finalMarginRate": 0.022310258548790658,
+        "expectedQty": 20.0,
+        "expectedCost": 290909.0909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "쉐어 블랙",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 104720.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.12,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -13260.199999999997,
+        "requestPlus": 16000.0,
+        "requestMinus": 14545.454545454544,
+        "finalMargin": 2739.800000000003,
+        "finalMarginRate": 0.026163101604278104,
+        "expectedQty": 40.0,
+        "expectedCost": 581818.1818181818
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "쉐어 모카",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 104720.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.12,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -13260.199999999997,
+        "requestPlus": 16000.0,
+        "requestMinus": 14545.454545454544,
+        "finalMargin": 2739.800000000003,
+        "finalMarginRate": 0.026163101604278104,
+        "expectedQty": 40.0,
+        "expectedCost": 581818.1818181818
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    }
+  ]
+}

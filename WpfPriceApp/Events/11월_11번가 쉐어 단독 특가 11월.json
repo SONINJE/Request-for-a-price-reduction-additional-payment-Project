@@ -1,0 +1,36 @@
+{
+  "eventName": "11번가 쉐어 단독 특가 11월",
+  "period": "",
+  "memo": "원본 시트: 11월",
+  "products": [
+    {
+      "name": "쉐어 모카",
+      "note": "노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 90090.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.09,
+        "existingSubsidy": 14539.8,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -27890.199999999997,
+        "requestPlus": 32000.0,
+        "requestMinus": 29090.90909090909,
+        "finalMargin": 4109.800000000003,
+        "finalMarginRate": 0.04561882561882565,
+        "expectedQty": 30.0,
+        "expectedCost": 872727.2727272727
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    }
+  ]
+}

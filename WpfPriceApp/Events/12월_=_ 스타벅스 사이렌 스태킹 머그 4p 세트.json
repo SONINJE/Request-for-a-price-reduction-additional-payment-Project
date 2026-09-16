@@ -1,0 +1,2452 @@
+{
+  "eventName": "=> 스타벅스 사이렌 스태킹 머그 4p 세트",
+  "period": "",
+  "memo": "원본 시트: 12월",
+  "products": [
+    {
+      "name": "지니오 S 베이직",
+      "note": "비노출",
+      "values": {
+        "salePrice": 69000.0,
+        "supplyPrice": 58650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -18330.0,
+        "requestPlus": 21000.0,
+        "requestMinus": 19090.90909090909,
+        "finalMargin": 2670.0,
+        "finalMarginRate": 0.04552429667519182,
+        "expectedQty": 20.0,
+        "expectedCost": 381818.18181818177
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 아이스 번들팩",
+      "note": "비노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -25630.0,
+        "requestPlus": 30000.0,
+        "requestMinus": 27272.727272727272,
+        "finalMargin": 4370.0,
+        "finalMarginRate": 0.051931075460487225,
+        "expectedQty": 5.0,
+        "expectedCost": 136363.63636363635
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 어텀패키지",
+      "note": "비노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -6099.500000000001,
+        "cost": 94521.0,
+        "realCost": 100620.5,
+        "marginAmount": -20470.5,
+        "requestPlus": 25000.0,
+        "requestMinus": 22727.272727272724,
+        "finalMargin": 4529.5,
+        "finalMarginRate": 0.053826500297088534,
+        "expectedQty": 5.0,
+        "expectedCost": 113636.36363636362
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "비노출",
+      "values": {
+        "salePrice": 79000.0,
+        "supplyPrice": 71100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -5880.0,
+        "requestPlus": 9500.0,
+        "requestMinus": 8636.363636363636,
+        "finalMargin": 3620.0,
+        "finalMarginRate": 0.050914205344585094,
+        "expectedQty": 70.0,
+        "expectedCost": 604545.4545454545
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 그레이",
+      "note": "비노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 89100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": -1660.0,
+        "cost": 87720.0,
+        "realCost": 89380.0,
+        "marginAmount": -4280.0,
+        "requestPlus": 9000.0,
+        "requestMinus": 8181.818181818181,
+        "finalMargin": 4720.0,
+        "finalMarginRate": 0.05297418630751964,
+        "expectedQty": 30.0,
+        "expectedCost": 245454.54545454544
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 화이트",
+      "note": "비노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 89100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": -1660.0,
+        "cost": 87720.0,
+        "realCost": 89380.0,
+        "marginAmount": -4280.0,
+        "requestPlus": 9000.0,
+        "requestMinus": 8181.818181818181,
+        "finalMargin": 4720.0,
+        "finalMarginRate": 0.05297418630751964,
+        "expectedQty": 30.0,
+        "expectedCost": 245454.54545454544
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 실버",
+      "note": "비노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 89100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -4280.0,
+        "requestPlus": 9000.0,
+        "requestMinus": 8181.818181818181,
+        "finalMargin": 4720.0,
+        "finalMarginRate": 0.05297418630751964,
+        "expectedQty": 30.0,
+        "expectedCost": 245454.54545454544
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "비노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 107100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -10880.199999999997,
+        "requestPlus": 13000.0,
+        "requestMinus": 11818.181818181818,
+        "finalMargin": 2119.800000000003,
+        "finalMarginRate": 0.01979271708683476,
+        "expectedQty": 20.0,
+        "expectedCost": 236363.63636363635
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "비노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 107100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -10880.199999999997,
+        "requestPlus": 13000.0,
+        "requestMinus": 11818.181818181818,
+        "finalMargin": 2119.800000000003,
+        "finalMarginRate": 0.01979271708683476,
+        "expectedQty": 20.0,
+        "expectedCost": 236363.63636363635
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 홀리데이패키지",
+      "note": "노출",
+      "values": {
+        "salePrice": 129000.0,
+        "supplyPrice": 116100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": 11480.0,
+        "requestPlus": 0.0,
+        "requestMinus": 0.0,
+        "finalMargin": 11480.0,
+        "finalMarginRate": 0.09888027562446167,
+        "expectedQty": 50.0,
+        "expectedCost": 0.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "비노출",
+      "values": {
+        "salePrice": 69000.0,
+        "supplyPrice": 58650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -18330.0,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 1670.0,
+        "finalMarginRate": 0.028473998294970163,
+        "expectedQty": 20.0,
+        "expectedCost": 363636.3636363636
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 화이트",
+      "note": "비노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -1660.0,
+        "cost": 87720.0,
+        "realCost": 89380.0,
+        "marginAmount": -9230.0,
+        "requestPlus": 12000.0,
+        "requestMinus": 10909.090909090908,
+        "finalMargin": 2770.0,
+        "finalMarginRate": 0.03291740938799762,
+        "expectedQty": 10.0,
+        "expectedCost": 109090.90909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 실버",
+      "note": "비노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -9230.0,
+        "requestPlus": 12000.0,
+        "requestMinus": 10909.090909090908,
+        "finalMargin": 2770.0,
+        "finalMarginRate": 0.03291740938799762,
+        "expectedQty": 5.0,
+        "expectedCost": 54545.454545454544
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 그레이",
+      "note": "비노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -9230.0,
+        "requestPlus": 12000.0,
+        "requestMinus": 10909.090909090908,
+        "finalMargin": 2770.0,
+        "finalMarginRate": 0.03291740938799762,
+        "expectedQty": 5.0,
+        "expectedCost": 54545.454545454544
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 홀리데이패키지",
+      "note": "비노출",
+      "values": {
+        "salePrice": 109000.0,
+        "supplyPrice": 98100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": -6520.0,
+        "requestPlus": 9000.0,
+        "requestMinus": 8181.818181818181,
+        "finalMargin": 2480.0,
+        "finalMarginRate": 0.02528032619775739,
+        "expectedQty": 5.0,
+        "expectedCost": 40909.090909090904
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "비노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -16830.199999999997,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 3169.800000000003,
+        "finalMarginRate": 0.031337617399901166,
+        "expectedQty": 100.0,
+        "expectedCost": 1818181.8181818181
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "비노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -16830.199999999997,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 3169.800000000003,
+        "finalMarginRate": 0.031337617399901166,
+        "expectedQty": 100.0,
+        "expectedCost": 1818181.8181818181
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 아트패키지",
+      "note": "비노출",
+      "values": {
+        "salePrice": 109000.0,
+        "supplyPrice": 92650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": -11970.0,
+        "requestPlus": 15000.0,
+        "requestMinus": 13636.363636363636,
+        "finalMargin": 3030.0,
+        "finalMarginRate": 0.03270372369131139,
+        "expectedQty": 50.0,
+        "expectedCost": 681818.1818181818
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 홀리데이패키지",
+      "note": "비노출",
+      "values": {
+        "salePrice": 105000.0,
+        "supplyPrice": 89250.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": -15370.0,
+        "requestPlus": 18000.0,
+        "requestMinus": 16363.636363636362,
+        "finalMargin": 2630.0,
+        "finalMarginRate": 0.029467787114845937,
+        "expectedQty": 50.0,
+        "expectedCost": 818181.8181818181
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 아이스 번들팩",
+      "note": "비노출",
+      "values": {
+        "salePrice": 109000.0,
+        "supplyPrice": 92650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -17130.0,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 2870.0,
+        "finalMarginRate": 0.030976794387479762,
+        "expectedQty": 50.0,
+        "expectedCost": 9090.90909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "비노출",
+      "values": {
+        "salePrice": 69000.0,
+        "supplyPrice": 58650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -18330.0,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 1670.0,
+        "finalMarginRate": 0.028473998294970163,
+        "expectedQty": 30.0,
+        "expectedCost": 545454.5454545454
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 실버",
+      "note": "비노출",
+      "values": {
+        "salePrice": 89000.0,
+        "supplyPrice": 75650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -17730.0,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 2270.0,
+        "finalMarginRate": 0.030006609385327166,
+        "expectedQty": 20.0,
+        "expectedCost": 363636.3636363636
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "비노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -16830.199999999997,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 3169.800000000003,
+        "finalMarginRate": 0.031337617399901166,
+        "expectedQty": 20.0,
+        "expectedCost": 363636.3636363636
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "비노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -16830.199999999997,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 3169.800000000003,
+        "finalMarginRate": 0.031337617399901166,
+        "expectedQty": 20.0,
+        "expectedCost": 363636.3636363636
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 아이스 번들팩",
+      "note": "비노출",
+      "values": {
+        "salePrice": 109000.0,
+        "supplyPrice": 92650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -17130.0,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 2870.0,
+        "finalMarginRate": 0.030976794387479762,
+        "expectedQty": 5.0,
+        "expectedCost": 90909.0909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 아트패키지",
+      "note": "비노출",
+      "values": {
+        "salePrice": 109000.0,
+        "supplyPrice": 92650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": -11970.0,
+        "requestPlus": 15000.0,
+        "requestMinus": 13636.363636363636,
+        "finalMargin": 3030.0,
+        "finalMarginRate": 0.03270372369131139,
+        "expectedQty": 5.0,
+        "expectedCost": 68181.81818181818
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 홀리데이패키지",
+      "note": "비노출",
+      "values": {
+        "salePrice": 109000.0,
+        "supplyPrice": 92650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": -11970.0,
+        "requestPlus": 15000.0,
+        "requestMinus": 13636.363636363636,
+        "finalMargin": 3030.0,
+        "finalMarginRate": 0.03270372369131139,
+        "expectedQty": 5.0,
+        "expectedCost": 68181.81818181818
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "노출",
+      "values": {
+        "salePrice": 69000.0,
+        "supplyPrice": 60720.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.12,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -16260.0,
+        "requestPlus": 18000.0,
+        "requestMinus": 16363.636363636362,
+        "finalMargin": 1740.0,
+        "finalMarginRate": 0.02865612648221344,
+        "expectedQty": 100.0,
+        "expectedCost": 1636363.6363636362
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 아이스 번들팩",
+      "note": "노출",
+      "values": {
+        "salePrice": 109000.0,
+        "supplyPrice": 95920.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.12,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -13860.0,
+        "requestPlus": 16000.0,
+        "requestMinus": 14545.454545454544,
+        "finalMargin": 2140.0,
+        "finalMarginRate": 0.022310258548790658,
+        "expectedQty": 20.0,
+        "expectedCost": 290909.0909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 104720.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.12,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -13260.199999999997,
+        "requestPlus": 16000.0,
+        "requestMinus": 14545.454545454544,
+        "finalMargin": 2739.800000000003,
+        "finalMarginRate": 0.026163101604278104,
+        "expectedQty": 40.0,
+        "expectedCost": 581818.1818181818
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 104720.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.12,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -13260.199999999997,
+        "requestPlus": 16000.0,
+        "requestMinus": 14545.454545454544,
+        "finalMargin": 2739.800000000003,
+        "finalMarginRate": 0.026163101604278104,
+        "expectedQty": 40.0,
+        "expectedCost": 581818.1818181818
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "비노출",
+      "values": {
+        "salePrice": 69000.0,
+        "supplyPrice": 60720.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.12,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -16260.0,
+        "requestPlus": 19000.0,
+        "requestMinus": 17272.727272727272,
+        "finalMargin": 2740.0,
+        "finalMarginRate": 0.04512516469038208,
+        "expectedQty": 10.0,
+        "expectedCost": 172727.2727272727
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "비노출",
+      "values": {
+        "salePrice": 79000.0,
+        "supplyPrice": 69520.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.12,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -7460.0,
+        "requestPlus": 10000.0,
+        "requestMinus": 9090.90909090909,
+        "finalMargin": 2540.0,
+        "finalMarginRate": 0.03653624856156502,
+        "expectedQty": 10.0,
+        "expectedCost": 90909.0909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "노출",
+      "values": {
+        "salePrice": 79000.0,
+        "supplyPrice": 67150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -9830.0,
+        "requestPlus": 13000.0,
+        "requestMinus": 11818.181818181818,
+        "finalMargin": 3170.0,
+        "finalMarginRate": 0.04720774385703649,
+        "expectedQty": 20.0,
+        "expectedCost": 236363.63636363635
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 그레이",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": 7770.0,
+        "requestPlus": 0.0,
+        "requestMinus": 0.0,
+        "finalMargin": 7770.0,
+        "finalMarginRate": 0.07681660899653979,
+        "expectedQty": 3.0,
+        "expectedCost": 0.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 실버",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": 7770.0,
+        "requestPlus": 0.0,
+        "requestMinus": 0.0,
+        "finalMargin": 7770.0,
+        "finalMarginRate": 0.07681660899653979,
+        "expectedQty": 2.0,
+        "expectedCost": 0.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 화이트",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -1660.0,
+        "cost": 87720.0,
+        "realCost": 89380.0,
+        "marginAmount": 7770.0,
+        "requestPlus": 0.0,
+        "requestMinus": 0.0,
+        "finalMargin": 7770.0,
+        "finalMarginRate": 0.07681660899653979,
+        "expectedQty": 4.0,
+        "expectedCost": 0.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 아이스 번들팩",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -8630.0,
+        "requestPlus": 14000.0,
+        "requestMinus": 12727.272727272726,
+        "finalMargin": 5370.0,
+        "finalMarginRate": 0.05308947108255067,
+        "expectedQty": 5.0,
+        "expectedCost": 63636.36363636363
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 아트패키지",
+      "note": "비노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.800000000001,
+        "cost": 87720.0,
+        "realCost": 100620.8,
+        "marginAmount": -3470.800000000003,
+        "requestPlus": 9000.0,
+        "requestMinus": 8181.818181818181,
+        "finalMargin": 5529.199999999997,
+        "finalMarginRate": 0.05466337123084525,
+        "expectedQty": 5.0,
+        "expectedCost": 40909.090909090904
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 어텀패키지",
+      "note": "비노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -6099.500000000001,
+        "cost": 94521.0,
+        "realCost": 100620.5,
+        "marginAmount": -3470.5,
+        "requestPlus": 9000.0,
+        "requestMinus": 8181.818181818181,
+        "finalMargin": 5529.5,
+        "finalMarginRate": 0.05466633712308453,
+        "expectedQty": 5.0,
+        "expectedCost": 40909.090909090904
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "노출",
+      "values": {
+        "salePrice": 129000.0,
+        "supplyPrice": 109650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -8330.199999999997,
+        "requestPlus": 14000.0,
+        "requestMinus": 12727.272727272726,
+        "finalMargin": 5669.800000000003,
+        "finalMarginRate": 0.05170816233470135,
+        "expectedQty": 3.0,
+        "expectedCost": 38181.81818181818
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "노출",
+      "values": {
+        "salePrice": 129000.0,
+        "supplyPrice": 109650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -8330.199999999997,
+        "requestPlus": 14000.0,
+        "requestMinus": 12727.272727272726,
+        "finalMargin": 5669.800000000003,
+        "finalMarginRate": 0.05170816233470135,
+        "expectedQty": 3.0,
+        "expectedCost": 38181.81818181818
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 아이스 번들팩",
+      "note": "노출",
+      "values": {
+        "salePrice": 105000.0,
+        "supplyPrice": 89250.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -20530.0,
+        "requestPlus": 23000.0,
+        "requestMinus": 20909.090909090908,
+        "finalMargin": 2470.0,
+        "finalMarginRate": 0.027675070028011204,
+        "expectedQty": 10.0,
+        "expectedCost": 209090.9090909091
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "노출",
+      "values": {
+        "salePrice": 115000.0,
+        "supplyPrice": 97750.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -20230.199999999997,
+        "requestPlus": 23000.0,
+        "requestMinus": 20909.090909090908,
+        "finalMargin": 2769.800000000003,
+        "finalMarginRate": 0.028335549872122792,
+        "expectedQty": 20.0,
+        "expectedCost": 418181.8181818182
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "노출",
+      "values": {
+        "salePrice": 115000.0,
+        "supplyPrice": 97750.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -20230.199999999997,
+        "requestPlus": 23000.0,
+        "requestMinus": 20909.090909090908,
+        "finalMargin": 2769.800000000003,
+        "finalMarginRate": 0.028335549872122792,
+        "expectedQty": 20.0,
+        "expectedCost": 418181.8181818182
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 홀리데이패키지",
+      "note": "",
+      "values": {
+        "salePrice": 105000.0,
+        "supplyPrice": 89250.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": -15370.0,
+        "requestPlus": 18000.0,
+        "requestMinus": 16363.636363636362,
+        "finalMargin": 2630.0,
+        "finalMarginRate": 0.029467787114845937
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "노출",
+      "values": {
+        "salePrice": 89000.0,
+        "supplyPrice": 79210.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.11,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -974.0,
+        "requestPlus": 5000.0,
+        "requestMinus": 4545.454545454545,
+        "finalMargin": 4026.0,
+        "finalMarginRate": 0.05082691579346042,
+        "expectedQty": 20.0,
+        "expectedCost": 90909.0909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 그레이",
+      "note": "노출",
+      "values": {
+        "salePrice": 107000.0,
+        "supplyPrice": 95230.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.11,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -2002.0,
+        "requestPlus": 7000.0,
+        "requestMinus": 6363.636363636363,
+        "finalMargin": 4998.0,
+        "finalMarginRate": 0.05248346109419301,
+        "expectedQty": 3.0,
+        "expectedCost": 19090.90909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 실버",
+      "note": "노출",
+      "values": {
+        "salePrice": 107000.0,
+        "supplyPrice": 95230.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.11,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -2002.0,
+        "requestPlus": 7000.0,
+        "requestMinus": 6363.636363636363,
+        "finalMargin": 4998.0,
+        "finalMarginRate": 0.05248346109419301,
+        "expectedQty": 2.0,
+        "expectedCost": 12727.272727272726
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 화이트",
+      "note": "노출",
+      "values": {
+        "salePrice": 107000.0,
+        "supplyPrice": 95230.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.11,
+        "existingSubsidy": -1660.0,
+        "cost": 87720.0,
+        "realCost": 89380.0,
+        "marginAmount": -2002.0,
+        "requestPlus": 7000.0,
+        "requestMinus": 6363.636363636363,
+        "finalMargin": 4998.0,
+        "finalMarginRate": 0.05248346109419301,
+        "expectedQty": 4.0,
+        "expectedCost": 25454.545454545452
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 아이스 번들팩",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 105910.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.11,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -8154.0,
+        "requestPlus": 13000.0,
+        "requestMinus": 11818.181818181818,
+        "finalMargin": 4846.0,
+        "finalMarginRate": 0.045755830422056464,
+        "expectedQty": 5.0,
+        "expectedCost": 59090.90909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 어텀패키지",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 105910.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.11,
+        "existingSubsidy": -6099.500000000001,
+        "cost": 94521.0,
+        "realCost": 100620.5,
+        "marginAmount": -2994.5,
+        "requestPlus": 8000.0,
+        "requestMinus": 7272.727272727272,
+        "finalMargin": 5005.5,
+        "finalMarginRate": 0.04726182607874611,
+        "expectedQty": 5.0,
+        "expectedCost": 36363.63636363636
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 홀리데이패키지",
+      "note": "",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": -7754.0,
+        "requestPlus": 13000.0,
+        "requestMinus": 11818.181818181818,
+        "finalMargin": 5246.0,
+        "finalMarginRate": 0.051863568956994566
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "노출",
+      "values": {
+        "salePrice": 129000.0,
+        "supplyPrice": 114810.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.11,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -7814.199999999997,
+        "requestPlus": 13000.0,
+        "requestMinus": 11818.181818181818,
+        "finalMargin": 5185.800000000003,
+        "finalMarginRate": 0.04516853932584272,
+        "expectedQty": 3.0,
+        "expectedCost": 35454.545454545456
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "노출",
+      "values": {
+        "salePrice": 129000.0,
+        "supplyPrice": 114810.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.11,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -7814.199999999997,
+        "requestPlus": 13000.0,
+        "requestMinus": 11818.181818181818,
+        "finalMargin": 5185.800000000003,
+        "finalMarginRate": 0.04516853932584272,
+        "expectedQty": 3.0,
+        "expectedCost": 35454.545454545456
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "노출",
+      "values": {
+        "salePrice": 69000.0,
+        "supplyPrice": 58650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -18330.0,
+        "requestPlus": 21000.0,
+        "requestMinus": 19090.90909090909,
+        "finalMargin": 2670.0,
+        "finalMarginRate": 0.04552429667519182,
+        "expectedQty": 20.0,
+        "expectedCost": 381818.18181818177
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 실버",
+      "note": "노출",
+      "values": {
+        "salePrice": 105000.0,
+        "supplyPrice": 89250.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -4130.0,
+        "requestPlus": 8000.0,
+        "requestMinus": 7272.727272727272,
+        "finalMargin": 3870.0,
+        "finalMarginRate": 0.04336134453781513,
+        "expectedQty": 2.0,
+        "expectedCost": 14545.454545454544
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 플러스",
+      "note": "노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -260.0,
+        "cost": 80920.0,
+        "realCost": 81180.0,
+        "marginAmount": -1030.0,
+        "requestPlus": 5000.0,
+        "requestMinus": 4545.454545454545,
+        "finalMargin": 3970.0,
+        "finalMarginRate": 0.04717765894236482,
+        "expectedQty": 4.0,
+        "expectedCost": 18181.81818181818
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -16830.199999999997,
+        "requestPlus": 12000.0,
+        "requestMinus": 10909.090909090908,
+        "finalMargin": -4830.199999999997,
+        "finalMarginRate": -0.04775284231339592,
+        "expectedQty": 3.0,
+        "expectedCost": 32727.272727272724
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "노출",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -16830.199999999997,
+        "requestPlus": 21000.0,
+        "requestMinus": 19090.90909090909,
+        "finalMargin": 4169.800000000003,
+        "finalMarginRate": 0.0412239248640633,
+        "expectedQty": 3.0,
+        "expectedCost": 57272.727272727265
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "",
+      "values": {
+        "salePrice": 63100.0,
+        "supplyPrice": 59945.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.05,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -17035.0,
+        "requestPlus": 22500.0,
+        "requestMinus": 20454.545454545452,
+        "finalMargin": 5465.0,
+        "finalMarginRate": 0.09116690299441155
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 플러스",
+      "note": "",
+      "values": {
+        "salePrice": 89000.0,
+        "supplyPrice": 75650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -260.0,
+        "cost": 80920.0,
+        "realCost": 81180.0,
+        "marginAmount": -9530.0,
+        "requestPlus": 12000.0,
+        "requestMinus": 10909.090909090908,
+        "finalMargin": 2470.0,
+        "finalMarginRate": 0.03265036351619299
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "",
+      "values": {
+        "salePrice": 113050.0,
+        "supplyPrice": 96092.5,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -21887.699999999997,
+        "requestPlus": 23000.0,
+        "requestMinus": 20909.090909090908,
+        "finalMargin": 1112.300000000003,
+        "finalMarginRate": 0.011575305044618497
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "",
+      "values": {
+        "salePrice": 113050.0,
+        "supplyPrice": 96092.5,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -21887.699999999997,
+        "requestPlus": 23000.0,
+        "requestMinus": 20909.090909090908,
+        "finalMargin": 1112.300000000003,
+        "finalMarginRate": 0.011575305044618497
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오S 터치 홀리데이패키지",
+      "note": "",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": -20470.0,
+        "requestPlus": 23000.0,
+        "requestMinus": 20909.090909090908,
+        "finalMargin": 2530.0,
+        "finalMarginRate": 0.030065359477124184
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 아이스 번들팩",
+      "note": "",
+      "values": {
+        "salePrice": 105000.0,
+        "supplyPrice": 89250.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -20530.0,
+        "requestPlus": 23000.0,
+        "requestMinus": 20909.090909090908,
+        "finalMargin": 2470.0,
+        "finalMarginRate": 0.027675070028011204
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 실버",
+      "note": "노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -9230.0,
+        "requestPlus": 12000.0,
+        "requestMinus": 10909.090909090908,
+        "finalMargin": 2770.0,
+        "finalMarginRate": 0.03291740938799762,
+        "expectedQty": 2.0,
+        "expectedCost": 21818.181818181816
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 화이트",
+      "note": "노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -1660.0,
+        "cost": 87720.0,
+        "realCost": 89380.0,
+        "marginAmount": -9230.0,
+        "requestPlus": 12000.0,
+        "requestMinus": 10909.090909090908,
+        "finalMargin": 2770.0,
+        "finalMarginRate": 0.03291740938799762,
+        "expectedQty": 4.0,
+        "expectedCost": 43636.36363636363
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 홀리데이패키지",
+      "note": "",
+      "values": {
+        "salePrice": 109000.0,
+        "supplyPrice": 92650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": -11970.0,
+        "requestPlus": 15000.0,
+        "requestMinus": 13636.363636363636,
+        "finalMargin": 3030.0,
+        "finalMarginRate": 0.03270372369131139
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "",
+      "values": {
+        "salePrice": 129000.0,
+        "supplyPrice": 109650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -8330.199999999997,
+        "requestPlus": 13000.0,
+        "requestMinus": 11818.181818181818,
+        "finalMargin": 4669.800000000003,
+        "finalMarginRate": 0.04258823529411768
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "",
+      "values": {
+        "salePrice": 129000.0,
+        "supplyPrice": 109650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -8330.199999999997,
+        "requestPlus": 13000.0,
+        "requestMinus": 11818.181818181818,
+        "finalMargin": 4669.800000000003,
+        "finalMarginRate": 0.04258823529411768
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오S 터치 아트패키지",
+      "note": "",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.800000000001,
+        "cost": 87720.0,
+        "realCost": 100620.8,
+        "marginAmount": -3470.800000000003,
+        "requestPlus": 8000.0,
+        "requestMinus": 7272.727272727272,
+        "finalMargin": 4529.199999999997,
+        "finalMarginRate": 0.04477706376668311
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오S 터치 홀리데이패키지",
+      "note": "",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": -3470.0,
+        "requestPlus": 8000.0,
+        "requestMinus": 7272.727272727272,
+        "finalMargin": 4530.0,
+        "finalMarginRate": 0.04478497281265447
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "",
+      "values": {
+        "salePrice": 79000.0,
+        "supplyPrice": 67150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -9830.0,
+        "requestPlus": 12500.0,
+        "requestMinus": 11363.636363636362,
+        "finalMargin": 2670.0,
+        "finalMarginRate": 0.039761727475800444
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 아이스 번들팩",
+      "note": "",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -8630.0,
+        "requestPlus": 12500.0,
+        "requestMinus": 11363.636363636362,
+        "finalMargin": 3870.0,
+        "finalMarginRate": 0.03826000988630746
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 실버",
+      "note": "",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -9230.0,
+        "requestPlus": 12500.0,
+        "requestMinus": 11363.636363636362,
+        "finalMargin": 3270.0,
+        "finalMarginRate": 0.03885918003565062
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 그레이",
+      "note": "",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -1660.0,
+        "cost": 87720.0,
+        "realCost": 89380.0,
+        "marginAmount": -9230.0,
+        "requestPlus": 12500.0,
+        "requestMinus": 11363.636363636362,
+        "finalMargin": 3270.0,
+        "finalMarginRate": 0.03885918003565062
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 화이트",
+      "note": "",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 84150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -1660.0,
+        "cost": 87720.0,
+        "realCost": 89380.0,
+        "marginAmount": -9230.0,
+        "requestPlus": 12500.0,
+        "requestMinus": 11363.636363636362,
+        "finalMargin": 3270.0,
+        "finalMarginRate": 0.03885918003565062
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 실버",
+      "note": "",
+      "values": {
+        "salePrice": 105000.0,
+        "supplyPrice": 89250.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -4130.0,
+        "requestPlus": 6000.0,
+        "requestMinus": 5454.545454545454,
+        "finalMargin": 1870.0,
+        "finalMarginRate": 0.02095238095238095
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 베이직",
+      "note": "",
+      "values": {
+        "salePrice": 59000.0,
+        "supplyPrice": 56050.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.05,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -20930.0,
+        "requestPlus": 22000.0,
+        "requestMinus": 20000.0,
+        "finalMargin": 1070.0,
+        "finalMarginRate": 0.019090098126672613
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 플러스",
+      "note": "",
+      "values": {
+        "salePrice": 89000.0,
+        "supplyPrice": 75650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -260.0,
+        "cost": 80920.0,
+        "realCost": 81180.0,
+        "marginAmount": -9530.0,
+        "requestPlus": 11000.0,
+        "requestMinus": 10000.0,
+        "finalMargin": 1470.0,
+        "finalMarginRate": 0.019431592861863845
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 그레이",
+      "note": "",
+      "values": {
+        "salePrice": 105000.0,
+        "supplyPrice": 89250.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -4130.0,
+        "requestPlus": 7000.0,
+        "requestMinus": 6363.636363636363,
+        "finalMargin": 2870.0,
+        "finalMarginRate": 0.03215686274509804
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 화이트",
+      "note": "",
+      "values": {
+        "salePrice": 105000.0,
+        "supplyPrice": 89250.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -1660.0,
+        "cost": 87720.0,
+        "realCost": 89380.0,
+        "marginAmount": -4130.0,
+        "requestPlus": 7000.0,
+        "requestMinus": 6363.636363636363,
+        "finalMargin": 2870.0,
+        "finalMarginRate": 0.03215686274509804
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 블랙",
+      "note": "",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -16830.199999999997,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 3169.800000000003,
+        "finalMarginRate": 0.031337617399901166
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 모카",
+      "note": "",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -16830.199999999997,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 3169.800000000003,
+        "finalMarginRate": 0.031337617399901166
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "지니오 S 쉐어 크림",
+      "note": "",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 101150.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -19460.100000000002,
+        "cost": 94520.0,
+        "realCost": 113980.1,
+        "marginAmount": -16830.100000000006,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 3169.899999999994,
+        "finalMarginRate": 0.031338606030647496,
+        "expectedQty": 539.8999999999978,
+        "expectedCost": 490.81818181817977
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오S 터치 홀리데이패키지",
+      "note": "",
+      "values": {
+        "salePrice": 119000.0,
+        "supplyPrice": 113050.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.05,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": 8430.0,
+        "requestPlus": 6000.0,
+        "requestMinus": 5454.545454545454,
+        "finalMargin": 14430.0,
+        "finalMarginRate": 0.12764263600176912
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    }
+  ]
+}

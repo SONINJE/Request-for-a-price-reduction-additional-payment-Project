@@ -1,0 +1,36 @@
+{
+  "eventName": "홈앤쇼핑 특가오늘 12-13일",
+  "period": "",
+  "memo": "원본 시트: 11월",
+  "products": [
+    {
+      "name": "지니오 S 베이직",
+      "note": "",
+      "values": {
+        "salePrice": 79000.0,
+        "supplyPrice": 71100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": 28340.0,
+        "cost": 101320.0,
+        "realCost": 72980.0,
+        "marginAmount": -5880.0,
+        "requestPlus": 10000.0,
+        "requestMinus": 9090.90909090909,
+        "finalMargin": 4120.0,
+        "finalMarginRate": 0.0579465541490858,
+        "expectedQty": 10.0,
+        "expectedCost": 90909.0909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    }
+  ]
+}

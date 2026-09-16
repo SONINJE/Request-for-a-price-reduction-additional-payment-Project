@@ -1,0 +1,116 @@
+{
+  "eventName": "10. T딜 브랜드 데이 11/4~11/6 진행",
+  "period": "",
+  "memo": "원본 시트: 11월",
+  "products": [
+    {
+      "name": "미니미",
+      "note": "비노출",
+      "values": {
+        "salePrice": 69000.0,
+        "supplyPrice": 62100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "realCost": 0.0,
+        "marginAmount": 58100.0,
+        "finalMargin": 58100.0,
+        "finalMarginRate": 0.9355877616747182,
+        "expectedQty": 50.0,
+        "expectedCost": 0.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 실버",
+      "note": "비노출",
+      "values": {
+        "salePrice": 97900.0,
+        "supplyPrice": 88110.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -5270.0,
+        "requestPlus": 10000.0,
+        "requestMinus": 9090.90909090909,
+        "finalMargin": 4730.0,
+        "finalMarginRate": 0.05368289637952559,
+        "expectedQty": 10.0,
+        "expectedCost": 90909.0909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "어텀팩",
+      "note": "비노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 89100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": -6099.500000000001,
+        "cost": 94521.0,
+        "realCost": 100620.5,
+        "marginAmount": -15520.5,
+        "requestPlus": 20000.0,
+        "requestMinus": 18181.81818181818,
+        "finalMargin": 4479.5,
+        "finalMarginRate": 0.05027497194163861,
+        "expectedQty": 20.0,
+        "expectedCost": 363636.3636363636
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "썸머팩",
+      "note": "비노출",
+      "values": {
+        "salePrice": 99000.0,
+        "supplyPrice": 89100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -20680.0,
+        "requestPlus": 24000.0,
+        "requestMinus": 21818.181818181816,
+        "finalMargin": 3320.0,
+        "finalMarginRate": 0.0372615039281706,
+        "expectedQty": 20.0,
+        "expectedCost": 436363.63636363635
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    }
+  ]
+}

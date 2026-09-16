@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <DirectoryRef Id="INSTALLFOLDER">
+      <Directory Id="d_fc5497bca58468ae64aed6c0f" Name="Events">
+      </Directory>
+      <Directory Id="d_f65a7da8f45e5a2f3931f4d65" Name="ko">
+      </Directory>
+    </DirectoryRef>
+    <ComponentGroup Id="AppFiles">
+      <Component Id="c_f68e8f4eb335bc05768aade46" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f68e8f4eb335bc05768aade46" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Accessibility.dll" Name="Accessibility.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ff3c5c18a5be36aa60818d5e9" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ff3c5c18a5be36aa60818d5e9" Source="C:\git_extension\PriceCalcApp\publish\win-x64\clretwrc.dll" Name="clretwrc.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd869a5a7ace786628f09fcff" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd869a5a7ace786628f09fcff" Source="C:\git_extension\PriceCalcApp\publish\win-x64\clrgc.dll" Name="clrgc.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f883a16c02a1435ed3e2974ff" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f883a16c02a1435ed3e2974ff" Source="C:\git_extension\PriceCalcApp\publish\win-x64\clrjit.dll" Name="clrjit.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f63e799be16ee6ac43e5c9abe" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f63e799be16ee6ac43e5c9abe" Source="C:\git_extension\PriceCalcApp\publish\win-x64\coreclr.dll" Name="coreclr.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f173352bd464c6d204f7d979c" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f173352bd464c6d204f7d979c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\createdump.exe" Name="createdump.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f88f663eb6931141820225dff" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f88f663eb6931141820225dff" Source="C:\git_extension\PriceCalcApp\publish\win-x64\D3DCompiler_47_cor3.dll" Name="D3DCompiler_47_cor3.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ffaf0addba71f11770d4edf43" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ffaf0addba71f11770d4edf43" Source="C:\git_extension\PriceCalcApp\publish\win-x64\DirectWriteForwarder.dll" Name="DirectWriteForwarder.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3c34b3dc8f8215e6f91f391f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f3c34b3dc8f8215e6f91f391f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\hostfxr.dll" Name="hostfxr.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3d5cd2472b432300e012bb39" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f3d5cd2472b432300e012bb39" Source="C:\git_extension\PriceCalcApp\publish\win-x64\hostpolicy.dll" Name="hostpolicy.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3464590a59a8097eda2abf76" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f3464590a59a8097eda2abf76" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Microsoft.CSharp.dll" Name="Microsoft.CSharp.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f004eed976bf7369cd8d01651" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f004eed976bf7369cd8d01651" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Microsoft.DiaSymReader.Native.amd64.dll" Name="Microsoft.DiaSymReader.Native.amd64.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1e3ebd05d6e327cb7fbbc177" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f1e3ebd05d6e327cb7fbbc177" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Microsoft.VisualBasic.Core.dll" Name="Microsoft.VisualBasic.Core.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3bdae6305b2bd65aa64a01a6" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f3bdae6305b2bd65aa64a01a6" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Microsoft.VisualBasic.dll" Name="Microsoft.VisualBasic.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd8a1901eaad962bb5ad2727c" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd8a1901eaad962bb5ad2727c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Microsoft.VisualBasic.Forms.dll" Name="Microsoft.VisualBasic.Forms.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f7f46482c5bc5986c1a5ba8b7" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f7f46482c5bc5986c1a5ba8b7" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Microsoft.Win32.Primitives.dll" Name="Microsoft.Win32.Primitives.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fbf34ee2c5d903f0c1251a066" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fbf34ee2c5d903f0c1251a066" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Microsoft.Win32.Registry.AccessControl.dll" Name="Microsoft.Win32.Registry.AccessControl.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1ae96254f862362c6ee041a9" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f1ae96254f862362c6ee041a9" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Microsoft.Win32.Registry.dll" Name="Microsoft.Win32.Registry.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3b17d6079405864d5099ec20" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f3b17d6079405864d5099ec20" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Microsoft.Win32.SystemEvents.dll" Name="Microsoft.Win32.SystemEvents.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ff056ba9ba87254b772c45f9d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ff056ba9ba87254b772c45f9d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\mscordaccore.dll" Name="mscordaccore.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3da56891c9d2b148d60560f4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f3da56891c9d2b148d60560f4" Source="C:\git_extension\PriceCalcApp\publish\win-x64\mscordaccore_amd64_amd64_8.0.2225.52707.dll" Name="mscordaccore_amd64_amd64_8.0.2225.52707.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f209ec7dc59aebd359b175cab" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f209ec7dc59aebd359b175cab" Source="C:\git_extension\PriceCalcApp\publish\win-x64\mscordbi.dll" Name="mscordbi.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3f83668d81a5efae08acca96" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f3f83668d81a5efae08acca96" Source="C:\git_extension\PriceCalcApp\publish\win-x64\mscorlib.dll" Name="mscorlib.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f8bf6f57cf1faa5fde18b6c55" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f8bf6f57cf1faa5fde18b6c55" Source="C:\git_extension\PriceCalcApp\publish\win-x64\mscorrc.dll" Name="mscorrc.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f11c88a0654fb9359ceb15e13" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f11c88a0654fb9359ceb15e13" Source="C:\git_extension\PriceCalcApp\publish\win-x64\msquic.dll" Name="msquic.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f07d2f53323124d7d8cbff857" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f07d2f53323124d7d8cbff857" Source="C:\git_extension\PriceCalcApp\publish\win-x64\netstandard.dll" Name="netstandard.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fea71a95de4d6915803da031e" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fea71a95de4d6915803da031e" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PenImc_cor3.dll" Name="PenImc_cor3.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f4a75baa38eb714bbeb0d2eed" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f4a75baa38eb714bbeb0d2eed" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationCore.dll" Name="PresentationCore.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f845a68ed1327b75bbf1eb4fc" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f845a68ed1327b75bbf1eb4fc" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework-SystemCore.dll" Name="PresentationFramework-SystemCore.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f4988478146dda43bdbe5e64f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f4988478146dda43bdbe5e64f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework-SystemData.dll" Name="PresentationFramework-SystemData.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f65ac48ad7d8b8d2fb7f51c22" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f65ac48ad7d8b8d2fb7f51c22" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework-SystemDrawing.dll" Name="PresentationFramework-SystemDrawing.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f7cf86d9c00186b4c6880ad0f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f7cf86d9c00186b4c6880ad0f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework-SystemXml.dll" Name="PresentationFramework-SystemXml.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f8d26bd90c96aaecb4e326c96" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f8d26bd90c96aaecb4e326c96" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework-SystemXmlLinq.dll" Name="PresentationFramework-SystemXmlLinq.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f0927a25c936e871bd56258ab" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f0927a25c936e871bd56258ab" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework.Aero.dll" Name="PresentationFramework.Aero.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f0240969a508ec0c7b71f954f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f0240969a508ec0c7b71f954f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework.Aero2.dll" Name="PresentationFramework.Aero2.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f60cfda3cc04845d34282713f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f60cfda3cc04845d34282713f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework.AeroLite.dll" Name="PresentationFramework.AeroLite.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f12d02f124884d709db3ba0c7" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f12d02f124884d709db3ba0c7" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework.Classic.dll" Name="PresentationFramework.Classic.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fcdee9506e0e61f2ecb732d7f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fcdee9506e0e61f2ecb732d7f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework.dll" Name="PresentationFramework.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f745bf1501c1b6093dc96b71b" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f745bf1501c1b6093dc96b71b" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework.Luna.dll" Name="PresentationFramework.Luna.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3a1af2a274f7c79b656c71b1" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f3a1af2a274f7c79b656c71b1" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationFramework.Royale.dll" Name="PresentationFramework.Royale.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f8da96885209881273e5352ad" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f8da96885209881273e5352ad" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationNative_cor3.dll" Name="PresentationNative_cor3.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc3755535ffb8a34bf33a6347" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fc3755535ffb8a34bf33a6347" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PresentationUI.dll" Name="PresentationUI.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f5a36df89c97a7c5d5bfa90f0" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f5a36df89c97a7c5d5bfa90f0" Source="C:\git_extension\PriceCalcApp\publish\win-x64\PriceCalcEngine.dll" Name="PriceCalcEngine.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f44ce654ca8c62e95c235514e" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f44ce654ca8c62e95c235514e" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ReachFramework.dll" Name="ReachFramework.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f155f20e5cc87c99ea5493e8d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f155f20e5cc87c99ea5493e8d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.AppContext.dll" Name="System.AppContext.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f571755db3f3f55424f8a8077" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f571755db3f3f55424f8a8077" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Buffers.dll" Name="System.Buffers.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f16cb41e00e10ac0f90b9fd35" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f16cb41e00e10ac0f90b9fd35" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.CodeDom.dll" Name="System.CodeDom.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f2e0e5d6f8bdd490f801e4ce0" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f2e0e5d6f8bdd490f801e4ce0" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Collections.Concurrent.dll" Name="System.Collections.Concurrent.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ff89ba8ff5689c0f9d7e23496" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ff89ba8ff5689c0f9d7e23496" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Collections.dll" Name="System.Collections.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fb5942699e689cebdee799275" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fb5942699e689cebdee799275" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Collections.Immutable.dll" Name="System.Collections.Immutable.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fa171f5e39a60f21477914b67" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fa171f5e39a60f21477914b67" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Collections.NonGeneric.dll" Name="System.Collections.NonGeneric.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fe47b453825cae3d9ccd5cc8d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fe47b453825cae3d9ccd5cc8d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Collections.Specialized.dll" Name="System.Collections.Specialized.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3374857a78d3b5db70163202" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f3374857a78d3b5db70163202" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.ComponentModel.Annotations.dll" Name="System.ComponentModel.Annotations.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f56ccce69044463ae5bc7994c" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f56ccce69044463ae5bc7994c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.ComponentModel.DataAnnotations.dll" Name="System.ComponentModel.DataAnnotations.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fea25651e725b1499a00f7bb7" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fea25651e725b1499a00f7bb7" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.ComponentModel.dll" Name="System.ComponentModel.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f11e3fc3eebed367d7659098d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f11e3fc3eebed367d7659098d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.ComponentModel.EventBasedAsync.dll" Name="System.ComponentModel.EventBasedAsync.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1ee8ed49267151d658defafe" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f1ee8ed49267151d658defafe" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.ComponentModel.Primitives.dll" Name="System.ComponentModel.Primitives.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3f51dcd1cb2cf4db18c6e60d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f3f51dcd1cb2cf4db18c6e60d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.ComponentModel.TypeConverter.dll" Name="System.ComponentModel.TypeConverter.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd775cb6b0f395ed0e89c7ee5" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd775cb6b0f395ed0e89c7ee5" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Configuration.ConfigurationManager.dll" Name="System.Configuration.ConfigurationManager.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f41ad1f406078846e46ad4686" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f41ad1f406078846e46ad4686" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Configuration.dll" Name="System.Configuration.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f486bf61bdb7f907f7a01d476" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f486bf61bdb7f907f7a01d476" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Console.dll" Name="System.Console.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1da93a9df261c58fcbe506fd" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f1da93a9df261c58fcbe506fd" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Core.dll" Name="System.Core.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd63b7df25e41ca3fe0fe5888" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd63b7df25e41ca3fe0fe5888" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Data.Common.dll" Name="System.Data.Common.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fa7b4a52960535d5c5261e24b" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fa7b4a52960535d5c5261e24b" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Data.DataSetExtensions.dll" Name="System.Data.DataSetExtensions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fe32db3c758bac33179053c9f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fe32db3c758bac33179053c9f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Data.dll" Name="System.Data.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fbff22ce0dea389378cd907a6" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fbff22ce0dea389378cd907a6" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Design.dll" Name="System.Design.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6ba7805d834c9722d78cc0ac" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6ba7805d834c9722d78cc0ac" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.Contracts.dll" Name="System.Diagnostics.Contracts.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f722fea1df773541732d27d07" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f722fea1df773541732d27d07" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.Debug.dll" Name="System.Diagnostics.Debug.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc939b3a04df77c96b8cabb2c" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fc939b3a04df77c96b8cabb2c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.DiagnosticSource.dll" Name="System.Diagnostics.DiagnosticSource.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f15ed27a29b0c92430dfce868" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f15ed27a29b0c92430dfce868" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.EventLog.dll" Name="System.Diagnostics.EventLog.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc20e0d52626a6f068fcfa0ba" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fc20e0d52626a6f068fcfa0ba" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.EventLog.Messages.dll" Name="System.Diagnostics.EventLog.Messages.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ff5745d29db88065ca8314906" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ff5745d29db88065ca8314906" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.FileVersionInfo.dll" Name="System.Diagnostics.FileVersionInfo.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc4475cead619ef91cf11a0aa" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fc4475cead619ef91cf11a0aa" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.PerformanceCounter.dll" Name="System.Diagnostics.PerformanceCounter.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f46a39660e43615dd18bf8424" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f46a39660e43615dd18bf8424" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.Process.dll" Name="System.Diagnostics.Process.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ff2e494a52461c72f395003f5" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ff2e494a52461c72f395003f5" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.StackTrace.dll" Name="System.Diagnostics.StackTrace.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fb4a20887cd024e39864db459" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fb4a20887cd024e39864db459" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.TextWriterTraceListener.dll" Name="System.Diagnostics.TextWriterTraceListener.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f03431730e36eae0a5f3154fe" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f03431730e36eae0a5f3154fe" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.Tools.dll" Name="System.Diagnostics.Tools.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f0d73456228d929e9d4e12fb5" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f0d73456228d929e9d4e12fb5" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.TraceSource.dll" Name="System.Diagnostics.TraceSource.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f48639f6a61cf1d7eb54e4cf4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f48639f6a61cf1d7eb54e4cf4" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Diagnostics.Tracing.dll" Name="System.Diagnostics.Tracing.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f2b62e312e89ab196c12723f9" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f2b62e312e89ab196c12723f9" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.DirectoryServices.dll" Name="System.DirectoryServices.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f20bdb48660d0a3b9508f2843" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f20bdb48660d0a3b9508f2843" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.dll" Name="System.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fed657521b029ccd843a84607" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fed657521b029ccd843a84607" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Drawing.Common.dll" Name="System.Drawing.Common.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f62b0d07f38bdefc3a10fd214" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f62b0d07f38bdefc3a10fd214" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Drawing.Design.dll" Name="System.Drawing.Design.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f73f7e14a83d78756b5db9290" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f73f7e14a83d78756b5db9290" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Drawing.dll" Name="System.Drawing.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f8b9870ca5842043ed3a28bab" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f8b9870ca5842043ed3a28bab" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Drawing.Primitives.dll" Name="System.Drawing.Primitives.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fb9e5c41274494f6bc6a68076" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fb9e5c41274494f6bc6a68076" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Dynamic.Runtime.dll" Name="System.Dynamic.Runtime.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f2125c3575fb78f077cb12d93" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f2125c3575fb78f077cb12d93" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Formats.Asn1.dll" Name="System.Formats.Asn1.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f81145c714e037f7999924901" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f81145c714e037f7999924901" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Formats.Tar.dll" Name="System.Formats.Tar.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fa8cb117bf62ae8ea50a51284" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fa8cb117bf62ae8ea50a51284" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Globalization.Calendars.dll" Name="System.Globalization.Calendars.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ff0e9ed9de89b1920792838a3" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ff0e9ed9de89b1920792838a3" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Globalization.dll" Name="System.Globalization.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f488595d39e946807c6d8f744" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f488595d39e946807c6d8f744" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Globalization.Extensions.dll" Name="System.Globalization.Extensions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f444d9275bf983fbbb18d6aa8" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f444d9275bf983fbbb18d6aa8" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.Compression.Brotli.dll" Name="System.IO.Compression.Brotli.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fb3d6dba741c00296e36e9925" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fb3d6dba741c00296e36e9925" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.Compression.dll" Name="System.IO.Compression.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f900927e64ca3dbd38ebccd7a" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f900927e64ca3dbd38ebccd7a" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.Compression.FileSystem.dll" Name="System.IO.Compression.FileSystem.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f31c93c60fc363206b417667c" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f31c93c60fc363206b417667c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.Compression.Native.dll" Name="System.IO.Compression.Native.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f8e9bd40a7c122593f05ff120" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f8e9bd40a7c122593f05ff120" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.Compression.ZipFile.dll" Name="System.IO.Compression.ZipFile.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f70a09755e7f34f94a4f86685" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f70a09755e7f34f94a4f86685" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.dll" Name="System.IO.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fbb779a00f84c2120b9c864ca" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fbb779a00f84c2120b9c864ca" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.FileSystem.AccessControl.dll" Name="System.IO.FileSystem.AccessControl.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd4e13c5ccf6a50f77157c219" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd4e13c5ccf6a50f77157c219" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.FileSystem.dll" Name="System.IO.FileSystem.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f2c21c1ab7a3b3ab06211e5ec" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f2c21c1ab7a3b3ab06211e5ec" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.FileSystem.DriveInfo.dll" Name="System.IO.FileSystem.DriveInfo.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6dec41c2d81cab9b4534ceab" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6dec41c2d81cab9b4534ceab" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.FileSystem.Primitives.dll" Name="System.IO.FileSystem.Primitives.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1178725699eeaaa410e51070" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f1178725699eeaaa410e51070" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.FileSystem.Watcher.dll" Name="System.IO.FileSystem.Watcher.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fca6ca055fad7df26d8090e91" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fca6ca055fad7df26d8090e91" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.IsolatedStorage.dll" Name="System.IO.IsolatedStorage.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f4fd960b2fcc9c423df3ec8ec" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f4fd960b2fcc9c423df3ec8ec" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.MemoryMappedFiles.dll" Name="System.IO.MemoryMappedFiles.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f5fe758770571fb0996d96921" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f5fe758770571fb0996d96921" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.Packaging.dll" Name="System.IO.Packaging.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f01dcb0b810857b0b59ea8571" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f01dcb0b810857b0b59ea8571" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.Pipes.AccessControl.dll" Name="System.IO.Pipes.AccessControl.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f72960972323ee0e5b596dbdd" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f72960972323ee0e5b596dbdd" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.Pipes.dll" Name="System.IO.Pipes.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f44af9d82f5dffdc197c71abd" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f44af9d82f5dffdc197c71abd" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.IO.UnmanagedMemoryStream.dll" Name="System.IO.UnmanagedMemoryStream.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fa07f6319caf397c28a0572ac" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fa07f6319caf397c28a0572ac" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Linq.dll" Name="System.Linq.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fb1ab5de6759e1401639131e1" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fb1ab5de6759e1401639131e1" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Linq.Expressions.dll" Name="System.Linq.Expressions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6d3b7cd20f990d7e146b0917" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6d3b7cd20f990d7e146b0917" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Linq.Parallel.dll" Name="System.Linq.Parallel.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f25219d874685a90dbee1857d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f25219d874685a90dbee1857d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Linq.Queryable.dll" Name="System.Linq.Queryable.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f7959b80a2380c2c62f1779db" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f7959b80a2380c2c62f1779db" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Memory.dll" Name="System.Memory.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f0a0a54cfbe8b31bc684e3c9f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f0a0a54cfbe8b31bc684e3c9f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.dll" Name="System.Net.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6f6625d6ede5e125f9e43a42" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6f6625d6ede5e125f9e43a42" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.Http.dll" Name="System.Net.Http.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc76103e7b53d87c800e226b4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fc76103e7b53d87c800e226b4" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.Http.Json.dll" Name="System.Net.Http.Json.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc2fcf60128aa1115281c7b90" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fc2fcf60128aa1115281c7b90" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.HttpListener.dll" Name="System.Net.HttpListener.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f698e9c5617a6e62ce382b8aa" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f698e9c5617a6e62ce382b8aa" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.Mail.dll" Name="System.Net.Mail.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fbf2b3a768e17e6eb00c63257" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fbf2b3a768e17e6eb00c63257" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.NameResolution.dll" Name="System.Net.NameResolution.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f06dc1b86d6ee19214aafc4ff" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f06dc1b86d6ee19214aafc4ff" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.NetworkInformation.dll" Name="System.Net.NetworkInformation.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f40948ec3db2ab7e72ea69623" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f40948ec3db2ab7e72ea69623" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.Ping.dll" Name="System.Net.Ping.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fb0420317d927f4af88c04021" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fb0420317d927f4af88c04021" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.Primitives.dll" Name="System.Net.Primitives.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fdc89f9e62a2bfe5a5900c392" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fdc89f9e62a2bfe5a5900c392" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.Quic.dll" Name="System.Net.Quic.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fdbc1d03a2f6bb35670fbe459" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fdbc1d03a2f6bb35670fbe459" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.Requests.dll" Name="System.Net.Requests.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fdd643f44f36199a487f3cd4f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fdd643f44f36199a487f3cd4f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.Security.dll" Name="System.Net.Security.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fcadd99f4456047905b101356" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fcadd99f4456047905b101356" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.ServicePoint.dll" Name="System.Net.ServicePoint.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f9a427bba05c1d9e5fcb8a81f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f9a427bba05c1d9e5fcb8a81f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.Sockets.dll" Name="System.Net.Sockets.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f2518956c596502f4ae517cd0" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f2518956c596502f4ae517cd0" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.WebClient.dll" Name="System.Net.WebClient.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f30e9bdaaa21c35f0b0af4cc3" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f30e9bdaaa21c35f0b0af4cc3" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.WebHeaderCollection.dll" Name="System.Net.WebHeaderCollection.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f2d4dafbda0ddfb8101bf1198" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f2d4dafbda0ddfb8101bf1198" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.WebProxy.dll" Name="System.Net.WebProxy.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f4cf7b77ee34567c16a976354" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f4cf7b77ee34567c16a976354" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.WebSockets.Client.dll" Name="System.Net.WebSockets.Client.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fb66ac4e5777ea2b0760fd99a" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fb66ac4e5777ea2b0760fd99a" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Net.WebSockets.dll" Name="System.Net.WebSockets.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f2115e6cb2cc611d8203fbacb" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f2115e6cb2cc611d8203fbacb" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Numerics.dll" Name="System.Numerics.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fefec42b1f1262c6370dc7260" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fefec42b1f1262c6370dc7260" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Numerics.Vectors.dll" Name="System.Numerics.Vectors.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fe1bb189e5250c81c37ad6dc3" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fe1bb189e5250c81c37ad6dc3" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.ObjectModel.dll" Name="System.ObjectModel.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fac164b01f05710b8e63aa00a" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fac164b01f05710b8e63aa00a" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Printing.dll" Name="System.Printing.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f66d05b90eaedac0c145678e5" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f66d05b90eaedac0c145678e5" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Private.CoreLib.dll" Name="System.Private.CoreLib.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f7b8c24d19d15d79825405762" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f7b8c24d19d15d79825405762" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Private.DataContractSerialization.dll" Name="System.Private.DataContractSerialization.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f99c8c397563dbcefd1cdf4a1" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f99c8c397563dbcefd1cdf4a1" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Private.Uri.dll" Name="System.Private.Uri.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f065f88cd6f7a8a47a39f7cca" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f065f88cd6f7a8a47a39f7cca" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Private.Xml.dll" Name="System.Private.Xml.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f83333574cdf25e48e7fe899b" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f83333574cdf25e48e7fe899b" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Private.Xml.Linq.dll" Name="System.Private.Xml.Linq.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f258fd44d38aa15702b42c89c" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f258fd44d38aa15702b42c89c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Reflection.DispatchProxy.dll" Name="System.Reflection.DispatchProxy.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc8280e59188bcf2e5d06ba47" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fc8280e59188bcf2e5d06ba47" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Reflection.dll" Name="System.Reflection.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fdad4a62749831584aae826fc" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fdad4a62749831584aae826fc" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Reflection.Emit.dll" Name="System.Reflection.Emit.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fdab3ddeea368669817d63ef4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fdab3ddeea368669817d63ef4" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Reflection.Emit.ILGeneration.dll" Name="System.Reflection.Emit.ILGeneration.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd83cf6df8317452230cfa178" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd83cf6df8317452230cfa178" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Reflection.Emit.Lightweight.dll" Name="System.Reflection.Emit.Lightweight.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd7e2c2b4d674de1707a35434" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd7e2c2b4d674de1707a35434" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Reflection.Extensions.dll" Name="System.Reflection.Extensions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd2182856d92fa29e1574a664" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd2182856d92fa29e1574a664" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Reflection.Metadata.dll" Name="System.Reflection.Metadata.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f9a3f0dcb0d2eb27556f3f2fa" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f9a3f0dcb0d2eb27556f3f2fa" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Reflection.Primitives.dll" Name="System.Reflection.Primitives.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd99c6034a32c6061dc0cc250" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd99c6034a32c6061dc0cc250" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Reflection.TypeExtensions.dll" Name="System.Reflection.TypeExtensions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1195440e320e2b70087707f5" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f1195440e320e2b70087707f5" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Resources.Extensions.dll" Name="System.Resources.Extensions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3ae499544a83805ead074bde" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f3ae499544a83805ead074bde" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Resources.Reader.dll" Name="System.Resources.Reader.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fe637eb3c6be565970ef3b4dd" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fe637eb3c6be565970ef3b4dd" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Resources.ResourceManager.dll" Name="System.Resources.ResourceManager.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fcb4ff6e668b04c363eac8250" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fcb4ff6e668b04c363eac8250" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Resources.Writer.dll" Name="System.Resources.Writer.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1fcbf9202468e1cbf4bebba7" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f1fcbf9202468e1cbf4bebba7" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.CompilerServices.Unsafe.dll" Name="System.Runtime.CompilerServices.Unsafe.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f0ffd4fd86c1f77392937f795" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f0ffd4fd86c1f77392937f795" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.CompilerServices.VisualC.dll" Name="System.Runtime.CompilerServices.VisualC.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f2c1751086c3bac449eee8c93" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f2c1751086c3bac449eee8c93" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.dll" Name="System.Runtime.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_feb25a234ea5198cfd9aee1f4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_feb25a234ea5198cfd9aee1f4" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.Extensions.dll" Name="System.Runtime.Extensions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6aa597433b9c0fce2ec51398" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6aa597433b9c0fce2ec51398" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.Handles.dll" Name="System.Runtime.Handles.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f147c51fdc450aa6abf42059e" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f147c51fdc450aa6abf42059e" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.InteropServices.dll" Name="System.Runtime.InteropServices.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f4f9b75707fc7e88f17ed9ab3" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f4f9b75707fc7e88f17ed9ab3" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.InteropServices.JavaScript.dll" Name="System.Runtime.InteropServices.JavaScript.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f070e76a1f880ffd0ab1af593" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f070e76a1f880ffd0ab1af593" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.InteropServices.RuntimeInformation.dll" Name="System.Runtime.InteropServices.RuntimeInformation.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f91ff6e186a56671e10b8060d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f91ff6e186a56671e10b8060d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.Intrinsics.dll" Name="System.Runtime.Intrinsics.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f84e999619f8bb37d387f5d90" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f84e999619f8bb37d387f5d90" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.Loader.dll" Name="System.Runtime.Loader.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fee2504cbc34d59d918987b5c" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fee2504cbc34d59d918987b5c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.Numerics.dll" Name="System.Runtime.Numerics.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ff81aa157bc1e2a564cd99693" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ff81aa157bc1e2a564cd99693" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.Serialization.dll" Name="System.Runtime.Serialization.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1b1e18037e6f59c6ba5fdd27" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f1b1e18037e6f59c6ba5fdd27" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.Serialization.Formatters.dll" Name="System.Runtime.Serialization.Formatters.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f04f90ab1c2a2bfae35fff5af" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f04f90ab1c2a2bfae35fff5af" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.Serialization.Json.dll" Name="System.Runtime.Serialization.Json.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1db6fba795747916c13bc213" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f1db6fba795747916c13bc213" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.Serialization.Primitives.dll" Name="System.Runtime.Serialization.Primitives.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f8945ce672feb19b99fa7f11a" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f8945ce672feb19b99fa7f11a" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Runtime.Serialization.Xml.dll" Name="System.Runtime.Serialization.Xml.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f5ef25a8dc6d52a61569c4e31" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f5ef25a8dc6d52a61569c4e31" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.AccessControl.dll" Name="System.Security.AccessControl.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc9828c21d871d71c31d2c6c6" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fc9828c21d871d71c31d2c6c6" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Claims.dll" Name="System.Security.Claims.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6e96fd17daa898fc2ddecd9b" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6e96fd17daa898fc2ddecd9b" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Cryptography.Algorithms.dll" Name="System.Security.Cryptography.Algorithms.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd905b4bd48b84db34aa6dfb5" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd905b4bd48b84db34aa6dfb5" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Cryptography.Cng.dll" Name="System.Security.Cryptography.Cng.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f2e6bee2fb076c34618c8e2b9" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f2e6bee2fb076c34618c8e2b9" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Cryptography.Csp.dll" Name="System.Security.Cryptography.Csp.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f828299a4e3bd13483c93f9e0" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f828299a4e3bd13483c93f9e0" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Cryptography.dll" Name="System.Security.Cryptography.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fe7865577b4666b9af88b6861" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fe7865577b4666b9af88b6861" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Cryptography.Encoding.dll" Name="System.Security.Cryptography.Encoding.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f08db4fcf265d12093ce716b1" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f08db4fcf265d12093ce716b1" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Cryptography.OpenSsl.dll" Name="System.Security.Cryptography.OpenSsl.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc40535769cc47c9480fba857" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fc40535769cc47c9480fba857" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Cryptography.Pkcs.dll" Name="System.Security.Cryptography.Pkcs.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fedbbd14c061838e71145ade9" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fedbbd14c061838e71145ade9" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Cryptography.Primitives.dll" Name="System.Security.Cryptography.Primitives.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ff35a39e57553d85d2ce552a8" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ff35a39e57553d85d2ce552a8" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Cryptography.ProtectedData.dll" Name="System.Security.Cryptography.ProtectedData.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f2e71b4c3d91c87de60fe1f24" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f2e71b4c3d91c87de60fe1f24" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Cryptography.X509Certificates.dll" Name="System.Security.Cryptography.X509Certificates.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f332aeb0d5e0bd777db737e32" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f332aeb0d5e0bd777db737e32" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Cryptography.Xml.dll" Name="System.Security.Cryptography.Xml.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f137c7dedb4bbb5ff5821c6ec" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f137c7dedb4bbb5ff5821c6ec" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.dll" Name="System.Security.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f7f94b8d6e73013a69778bb86" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f7f94b8d6e73013a69778bb86" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Permissions.dll" Name="System.Security.Permissions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f8da09a0622cfc2697a3af572" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f8da09a0622cfc2697a3af572" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Principal.dll" Name="System.Security.Principal.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd7869434f491e219d4a0ea02" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd7869434f491e219d4a0ea02" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.Principal.Windows.dll" Name="System.Security.Principal.Windows.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f330cddf36900c3e6404f919d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f330cddf36900c3e6404f919d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Security.SecureString.dll" Name="System.Security.SecureString.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f036c1324c905db64f4e5f25a" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f036c1324c905db64f4e5f25a" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.ServiceModel.Web.dll" Name="System.ServiceModel.Web.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6ca4823715914ece76f3618c" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6ca4823715914ece76f3618c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.ServiceProcess.dll" Name="System.ServiceProcess.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f9e8a47fe727333dbce14d9ca" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f9e8a47fe727333dbce14d9ca" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Text.Encoding.CodePages.dll" Name="System.Text.Encoding.CodePages.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fb65cb84963a74a5fa166898b" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fb65cb84963a74a5fa166898b" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Text.Encoding.dll" Name="System.Text.Encoding.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ff3d185d20b737d26a748d314" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ff3d185d20b737d26a748d314" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Text.Encoding.Extensions.dll" Name="System.Text.Encoding.Extensions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f0d89fab1124f6c58a15a4bbb" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f0d89fab1124f6c58a15a4bbb" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Text.Encodings.Web.dll" Name="System.Text.Encodings.Web.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fda4dc91b8f37d8d9383d0077" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fda4dc91b8f37d8d9383d0077" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Text.Json.dll" Name="System.Text.Json.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f71db3b3ac05fe5421c6ef32f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f71db3b3ac05fe5421c6ef32f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Text.RegularExpressions.dll" Name="System.Text.RegularExpressions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f42a857bf0eedb679a2316d85" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f42a857bf0eedb679a2316d85" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Threading.AccessControl.dll" Name="System.Threading.AccessControl.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fadf9944b7663e124f206ba43" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fadf9944b7663e124f206ba43" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Threading.Channels.dll" Name="System.Threading.Channels.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f58ec8a3035732c9c7b99c3bf" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f58ec8a3035732c9c7b99c3bf" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Threading.dll" Name="System.Threading.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6d158d907f614eb76368c4f1" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6d158d907f614eb76368c4f1" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Threading.Overlapped.dll" Name="System.Threading.Overlapped.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd87e12a85246c8482c03264e" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd87e12a85246c8482c03264e" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Threading.Tasks.Dataflow.dll" Name="System.Threading.Tasks.Dataflow.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f4dd85f0cf8d7d17f52178a5c" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f4dd85f0cf8d7d17f52178a5c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Threading.Tasks.dll" Name="System.Threading.Tasks.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd9489093d4a1ebe78b6630e7" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd9489093d4a1ebe78b6630e7" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Threading.Tasks.Extensions.dll" Name="System.Threading.Tasks.Extensions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6b62b53c11649599ff91055c" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6b62b53c11649599ff91055c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Threading.Tasks.Parallel.dll" Name="System.Threading.Tasks.Parallel.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fcf98864af38c532f0d360858" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fcf98864af38c532f0d360858" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Threading.Thread.dll" Name="System.Threading.Thread.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fe786271ca7b95f6e7e81fee7" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fe786271ca7b95f6e7e81fee7" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Threading.ThreadPool.dll" Name="System.Threading.ThreadPool.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f7f00be2eb93c0dc8ebc0d4af" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f7f00be2eb93c0dc8ebc0d4af" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Threading.Timer.dll" Name="System.Threading.Timer.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f984e560d80693c81d44b60a4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f984e560d80693c81d44b60a4" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Transactions.dll" Name="System.Transactions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6da8a97528cc28dd1e85852c" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6da8a97528cc28dd1e85852c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Transactions.Local.dll" Name="System.Transactions.Local.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fcb3d13790ce928f2b113608d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fcb3d13790ce928f2b113608d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.ValueTuple.dll" Name="System.ValueTuple.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f7539b0f38312734810867078" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f7539b0f38312734810867078" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Web.dll" Name="System.Web.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f238c65d65eae4ed3a6ef5642" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f238c65d65eae4ed3a6ef5642" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Web.HttpUtility.dll" Name="System.Web.HttpUtility.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fdc266757c49903602ebb0bf4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fdc266757c49903602ebb0bf4" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Windows.Controls.Ribbon.dll" Name="System.Windows.Controls.Ribbon.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6da2e2642713373febed9800" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6da2e2642713373febed9800" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Windows.dll" Name="System.Windows.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f9e6a6afb82c1ca255eaace7a" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f9e6a6afb82c1ca255eaace7a" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Windows.Extensions.dll" Name="System.Windows.Extensions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ffc72d14f498ba884f152ac88" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ffc72d14f498ba884f152ac88" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Windows.Forms.Design.dll" Name="System.Windows.Forms.Design.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f61dd1ca2d8ac700efcb4f8d4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f61dd1ca2d8ac700efcb4f8d4" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Windows.Forms.Design.Editors.dll" Name="System.Windows.Forms.Design.Editors.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f19249c22918473d50216c2c4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f19249c22918473d50216c2c4" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Windows.Forms.dll" Name="System.Windows.Forms.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ffb9bdb745509209011d4e472" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ffb9bdb745509209011d4e472" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Windows.Forms.Primitives.dll" Name="System.Windows.Forms.Primitives.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc8d2eaa18a5e578702929188" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fc8d2eaa18a5e578702929188" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Windows.Input.Manipulations.dll" Name="System.Windows.Input.Manipulations.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f467f2c325560efae30fcaca5" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f467f2c325560efae30fcaca5" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Windows.Presentation.dll" Name="System.Windows.Presentation.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f54468a199dbe232dff58a0d0" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f54468a199dbe232dff58a0d0" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Xaml.dll" Name="System.Xaml.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f858968d13fe25b50e1b86160" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f858968d13fe25b50e1b86160" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Xml.dll" Name="System.Xml.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fed8d49712615b29136c97585" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fed8d49712615b29136c97585" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Xml.Linq.dll" Name="System.Xml.Linq.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f751aff5435cf511a5444fca1" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f751aff5435cf511a5444fca1" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Xml.ReaderWriter.dll" Name="System.Xml.ReaderWriter.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f86edb495d8b90c7ff51ec7ff" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f86edb495d8b90c7ff51ec7ff" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Xml.Serialization.dll" Name="System.Xml.Serialization.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f03f20faf8eaae073d207420d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f03f20faf8eaae073d207420d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Xml.XDocument.dll" Name="System.Xml.XDocument.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6a04fc27ad8389fd81c9db62" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6a04fc27ad8389fd81c9db62" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Xml.XmlDocument.dll" Name="System.Xml.XmlDocument.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f393fb368ea4227c372fec342" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f393fb368ea4227c372fec342" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Xml.XmlSerializer.dll" Name="System.Xml.XmlSerializer.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd3f2e7f4aa5e7a4ed33e670d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fd3f2e7f4aa5e7a4ed33e670d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Xml.XPath.dll" Name="System.Xml.XPath.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ff442b87b63b5a74f201cdd55" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_ff442b87b63b5a74f201cdd55" Source="C:\git_extension\PriceCalcApp\publish\win-x64\System.Xml.XPath.XDocument.dll" Name="System.Xml.XPath.XDocument.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1cd5ab6e5ca61c5b6012d7ea" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f1cd5ab6e5ca61c5b6012d7ea" Source="C:\git_extension\PriceCalcApp\publish\win-x64\UIAutomationClient.dll" Name="UIAutomationClient.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc38d69413f67397f74ae4dbb" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fc38d69413f67397f74ae4dbb" Source="C:\git_extension\PriceCalcApp\publish\win-x64\UIAutomationClientSideProviders.dll" Name="UIAutomationClientSideProviders.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6dcf4e496257422a7382aa62" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f6dcf4e496257422a7382aa62" Source="C:\git_extension\PriceCalcApp\publish\win-x64\UIAutomationProvider.dll" Name="UIAutomationProvider.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f57ef8f21c1729072fc155b0f" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f57ef8f21c1729072fc155b0f" Source="C:\git_extension\PriceCalcApp\publish\win-x64\UIAutomationTypes.dll" Name="UIAutomationTypes.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fe7f79f8a039604b90d8fbe62" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fe7f79f8a039604b90d8fbe62" Source="C:\git_extension\PriceCalcApp\publish\win-x64\vcruntime140_cor3.dll" Name="vcruntime140_cor3.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f666d239afdcc1afec20f5849" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f666d239afdcc1afec20f5849" Source="C:\git_extension\PriceCalcApp\publish\win-x64\WindowsBase.dll" Name="WindowsBase.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f23f63be7a34c6d8a348b3e91" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f23f63be7a34c6d8a348b3e91" Source="C:\git_extension\PriceCalcApp\publish\win-x64\WindowsFormsIntegration.dll" Name="WindowsFormsIntegration.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f062ed94c65f8bd2d91e302c9" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f062ed94c65f8bd2d91e302c9" Source="C:\git_extension\PriceCalcApp\publish\win-x64\wpfgfx_cor3.dll" Name="wpfgfx_cor3.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f7f8889e0110a7fb6547a2437" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f7f8889e0110a7fb6547a2437" Source="C:\git_extension\PriceCalcApp\publish\win-x64\WpfPriceApp.deps.json" Name="WpfPriceApp.deps.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fb489326487bfb7937ddd9e07" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fb489326487bfb7937ddd9e07" Source="C:\git_extension\PriceCalcApp\publish\win-x64\WpfPriceApp.dll" Name="WpfPriceApp.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f50938887b2d52a9deee1782d" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f50938887b2d52a9deee1782d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\WpfPriceApp.exe" Name="WpfPriceApp.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fe1abc4e02d99ffa54177b5cd" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_fe1abc4e02d99ffa54177b5cd" Source="C:\git_extension\PriceCalcApp\publish\win-x64\WpfPriceApp.pdb" Name="WpfPriceApp.pdb" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f440fa622db6e72f5e9490708" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fi_f440fa622db6e72f5e9490708" Source="C:\git_extension\PriceCalcApp\publish\win-x64\WpfPriceApp.runtimeconfig.json" Name="WpfPriceApp.runtimeconfig.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f5d696cdce024ce8f6252c4cf" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f5d696cdce024ce8f6252c4cf" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\10월_11번가 긴급공수 10_26~10_28.json" Name="10월_11번가 긴급공수 10_26~10_28.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f25a611f374549205523cea95" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f25a611f374549205523cea95" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\10월_11번가 긴급공수.json" Name="10월_11번가 긴급공수.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc53aba3eb435fc8245a444ee" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_fc53aba3eb435fc8245a444ee" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\10월_13. 유비코리아.json" Name="10월_13. 유비코리아.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fefef2d88327ab9ff061e9074" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_fefef2d88327ab9ff061e9074" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\10월_Sk스토아 모바일라이브 (2일간 7일 ~ 8일).json" Name="10월_Sk스토아 모바일라이브 (2일간 7일 ~ 8일).json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fc6eeb7ff6ec7f07c9e089616" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_fc6eeb7ff6ec7f07c9e089616" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\10월_sk스토아 혜택온.json" Name="10월_sk스토아 혜택온.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f9e5d09277e0767536a88655e" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f9e5d09277e0767536a88655e" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\10월_오늘의집 (원데이_15일).json" Name="10월_오늘의집 (원데이_15일).json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f40c11b42709028f80109c6f2" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f40c11b42709028f80109c6f2" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\10월_카쇼라&amp;톡딜 (3.5일간 22일 17시 ~ 25일 24시).json" Name="10월_카쇼라&amp;톡딜 (3.5일간 22일 17시 ~ 25일 24시).json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fe0545af40bf69fbfcfcb2e10" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_fe0545af40bf69fbfcfcb2e10" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\10월_카카오선물하기 카쇼페(포미위크).json" Name="10월_카카오선물하기 카쇼페(포미위크).json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f25fdd86627fcf880962d9c56" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f25fdd86627fcf880962d9c56" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\10월_티딜 10월 21주차 특가 예정.json" Name="10월_티딜 10월 21주차 특가 예정.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f44cafeb7df2360e79ab141cf" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f44cafeb7df2360e79ab141cf" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_10. T딜 브랜드 데이 11_4~11_6 진행.json" Name="11월_10. T딜 브랜드 데이 11_4~11_6 진행.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f703df0c3c49dd2669792cc35" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f703df0c3c49dd2669792cc35" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_11번가 긴급공수 11_28.json" Name="11월_11번가 긴급공수 11_28.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f7e355b64be6cb719b972bbf2" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f7e355b64be6cb719b972bbf2" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_11번가 쉐어 단독 특가 11월.json" Name="11월_11번가 쉐어 단독 특가 11월.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f49ece38ffc6367a98acfe80b" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f49ece38ffc6367a98acfe80b" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_SK스토아 11월말 ~12월 초 행사.json" Name="11월_SK스토아 11월말 ~12월 초 행사.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fb96001064f1e712992399da0" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_fb96001064f1e712992399da0" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_sk스토아 가전 3days &amp; 슈퍼픽 14-17일.json" Name="11월_sk스토아 가전 3days &amp; 슈퍼픽 14-17일.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ffe4f4f78dcb4bdf6365c8cfb" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_ffe4f4f78dcb4bdf6365c8cfb" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_SK스토아 원데이 - 6일 _ 13일.json" Name="11월_SK스토아 원데이 - 6일 _ 13일.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f7f9c4de67a24e2ff37054bd3" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f7f9c4de67a24e2ff37054bd3" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_ssf 블랙프라이데이 11_18-11_21 4일간.json" Name="11월_ssf 블랙프라이데이 11_18-11_21 4일간.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fb4112d247fc45fc1fa8352ad" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_fb4112d247fc45fc1fa8352ad" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_선물하기 상시판매.json" Name="11월_선물하기 상시판매.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f5fc4a27cb583b2100e6d4824" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f5fc4a27cb583b2100e6d4824" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_오늘의 집 블랙 프라이데이 11_23-11_30.json" Name="11월_오늘의 집 블랙 프라이데이 11_23-11_30.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f68f39d0af9f454874cc385bd" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f68f39d0af9f454874cc385bd" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_인피니시마 직매입.json" Name="11월_인피니시마 직매입.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f57c186fa81a2caeefb997b46" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f57c186fa81a2caeefb997b46" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_카카오선물하기 취향저격 11_25~12_1.json" Name="11월_카카오선물하기 취향저격 11_25~12_1.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f004a9f2673c4c94485cfcd96" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f004a9f2673c4c94485cfcd96" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_카카오선물하기 포미위크 12_2~12_8.json" Name="11월_카카오선물하기 포미위크 12_2~12_8.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f52df3e2f78c9db829ef0fcda" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f52df3e2f78c9db829ef0fcda" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\11월_홈앤쇼핑 특가오늘 12-13일.json" Name="11월_홈앤쇼핑 특가오늘 12-13일.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f90016c87621e44bc109edfc7" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f90016c87621e44bc109edfc7" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\12월_=_ 스타벅스 사이렌 스태킹 머그 4p 세트.json" Name="12월_=_ 스타벅스 사이렌 스태킹 머그 4p 세트.json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3987ac6e309b644eb7e26b1c" Directory="d_fc5497bca58468ae64aed6c0f" Guid="*">
+        <File Id="fi_f3987ac6e309b644eb7e26b1c" Source="C:\git_extension\PriceCalcApp\publish\win-x64\Events\12월_카카오 돌체구스토 단독  라이브(12_1).json" Name="12월_카카오 돌체구스토 단독  라이브(12_1).json" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1c219c69b072ea8a4529e345" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_f1c219c69b072ea8a4529e345" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\Microsoft.VisualBasic.Forms.resources.dll" Name="Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f3d51bf4bcdd8a7ba0dad9a60" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_f3d51bf4bcdd8a7ba0dad9a60" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\PresentationCore.resources.dll" Name="PresentationCore.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f1214670d9fda1bb4fab7704d" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_f1214670d9fda1bb4fab7704d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\PresentationFramework.resources.dll" Name="PresentationFramework.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6058386b1d3eb6643caa98c4" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_f6058386b1d3eb6643caa98c4" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\PresentationUI.resources.dll" Name="PresentationUI.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ffd162ab32c98ff051ce05d64" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_ffd162ab32c98ff051ce05d64" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\ReachFramework.resources.dll" Name="ReachFramework.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fbcb8f112cfdd00d824b41825" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_fbcb8f112cfdd00d824b41825" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\System.Windows.Controls.Ribbon.resources.dll" Name="System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f82f05ee12cd5feb44ca1d926" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_f82f05ee12cd5feb44ca1d926" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\System.Windows.Forms.Design.resources.dll" Name="System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fcb3c8b591b69ee5a43e2ea06" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_fcb3c8b591b69ee5a43e2ea06" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\System.Windows.Forms.Primitives.resources.dll" Name="System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f2c069452d158f12df2ddaf9b" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_f2c069452d158f12df2ddaf9b" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\System.Windows.Forms.resources.dll" Name="System.Windows.Forms.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f37e07128c83a657f3d744401" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_f37e07128c83a657f3d744401" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\System.Windows.Input.Manipulations.resources.dll" Name="System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_ffbe1968810b930aba145c58e" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_ffbe1968810b930aba145c58e" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\System.Xaml.resources.dll" Name="System.Xaml.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f81beb2dd59e435aa8211acfd" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_f81beb2dd59e435aa8211acfd" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\UIAutomationClient.resources.dll" Name="UIAutomationClient.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fe64d85c36d0cbfe2ecaa2505" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_fe64d85c36d0cbfe2ecaa2505" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\UIAutomationClientSideProviders.resources.dll" Name="UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f17e47e83e6c96e6cef6e98ed" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_f17e47e83e6c96e6cef6e98ed" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\UIAutomationProvider.resources.dll" Name="UIAutomationProvider.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_fd6be152784674c812f0aec8d" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_fd6be152784674c812f0aec8d" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\UIAutomationTypes.resources.dll" Name="UIAutomationTypes.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f9700e35a561621176de8e4b0" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_f9700e35a561621176de8e4b0" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\WindowsBase.resources.dll" Name="WindowsBase.resources.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="c_f6d56a954459b09186ccc0fa4" Directory="d_f65a7da8f45e5a2f3931f4d65" Guid="*">
+        <File Id="fi_f6d56a954459b09186ccc0fa4" Source="C:\git_extension\PriceCalcApp\publish\win-x64\ko\WindowsFormsIntegration.resources.dll" Name="WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

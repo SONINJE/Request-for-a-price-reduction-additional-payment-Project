@@ -1,0 +1,229 @@
+{
+  "eventName": "sk스토아 혜택온",
+  "period": "",
+  "memo": "원본 시트: 10월",
+  "products": [
+    {
+      "name": "지니오 S 베이직",
+      "note": "비노출",
+      "values": {
+        "salePrice": 84900.0,
+        "supplyPrice": 72165.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 28340.0,
+        "cost": 101320.0,
+        "realCost": 72980.0,
+        "marginAmount": -4815.0,
+        "requestPlus": 10000.0,
+        "requestMinus": 9090.90909090909,
+        "finalMargin": 5185.0,
+        "finalMarginRate": 0.071849234393404,
+        "expectedQty": 10.0,
+        "expectedCost": 90909.0909090909
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "지니오 S 터치 그레이",
+      "note": "비노출",
+      "values": {
+        "salePrice": 103900.0,
+        "supplyPrice": 88315.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -5065.0,
+        "requestPlus": 8000.0,
+        "requestMinus": 7272.727272727272,
+        "finalMargin": 2935.0,
+        "finalMarginRate": 0.03323331257430787,
+        "expectedQty": 3.0,
+        "expectedCost": 21818.181818181816
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "자니오 S 터치 실버",
+      "note": "비노출",
+      "values": {
+        "salePrice": 103900.0,
+        "supplyPrice": 88315.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 32340.0,
+        "cost": 121720.0,
+        "realCost": 89380.0,
+        "marginAmount": -5065.0,
+        "requestPlus": 8000.0,
+        "requestMinus": 7272.727272727272,
+        "finalMargin": 2935.0,
+        "finalMarginRate": 0.03323331257430787,
+        "expectedQty": 3.0,
+        "expectedCost": 21818.181818181816
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "어텀팩",
+      "note": "비노출",
+      "values": {
+        "salePrice": 129000.0,
+        "supplyPrice": 109650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -6099.500000000001,
+        "cost": 94521.0,
+        "realCost": 100620.5,
+        "marginAmount": 5029.5,
+        "requestMinus": 0.0,
+        "finalMargin": 5029.5,
+        "finalMarginRate": 0.045868673050615594,
+        "expectedCost": 0.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost"
+      ]
+    },
+    {
+      "name": "마이큐 아트팩",
+      "note": "비노출",
+      "values": {
+        "salePrice": 129000.0,
+        "supplyPrice": 109650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.800000000001,
+        "cost": 87720.0,
+        "realCost": 100620.8,
+        "marginAmount": 5029.199999999997,
+        "requestMinus": 0.0,
+        "finalMargin": 5029.199999999997,
+        "finalMarginRate": 0.045865937072503395,
+        "expectedCost": 0.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost"
+      ]
+    },
+    {
+      "name": "썸머팩",
+      "note": "비노출",
+      "values": {
+        "salePrice": 123900.0,
+        "supplyPrice": 105315.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -380.0,
+        "cost": 105400.0,
+        "realCost": 105780.0,
+        "marginAmount": -4465.0,
+        "requestPlus": 8000.0,
+        "requestMinus": 7272.727272727272,
+        "finalMargin": 3535.0,
+        "finalMarginRate": 0.03356596876038551,
+        "expectedCost": 0.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus"
+      ]
+    },
+    {
+      "name": "쉐어 블랙",
+      "note": "비노출",
+      "values": {
+        "salePrice": 135000.0,
+        "supplyPrice": 114750.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -3230.199999999997,
+        "requestPlus": 8000.0,
+        "requestMinus": 7272.727272727272,
+        "finalMargin": 4769.800000000003,
+        "finalMarginRate": 0.04156688453159044,
+        "expectedQty": 2.0,
+        "expectedCost": 14545.454545454544
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "쉐어 모카",
+      "note": "비노출",
+      "values": {
+        "salePrice": 135000.0,
+        "supplyPrice": 114750.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": 14539.800000000001,
+        "cost": 128520.0,
+        "realCost": 113980.2,
+        "marginAmount": -3230.199999999997,
+        "requestPlus": 8000.0,
+        "requestMinus": 7272.727272727272,
+        "finalMargin": 4769.800000000003,
+        "finalMarginRate": 0.04156688453159044,
+        "expectedQty": 2.0,
+        "expectedCost": 14545.454545454544
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    }
+  ]
+}

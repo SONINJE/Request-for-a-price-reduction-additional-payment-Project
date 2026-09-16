@@ -1,0 +1,63 @@
+{
+  "eventName": "인피니시마 직매입",
+  "period": "",
+  "memo": "원본 시트: 11월",
+  "products": [
+    {
+      "name": "지니오s 베이직",
+      "note": "",
+      "values": {
+        "salePrice": 79000.0,
+        "supplyPrice": 71100.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.1,
+        "existingSubsidy": 1140.0,
+        "cost": 74120.0,
+        "realCost": 72980.0,
+        "marginAmount": -5880.0,
+        "requestPlus": 10000.0,
+        "requestMinus": 9090.90909090909,
+        "finalMargin": 4120.0,
+        "finalMarginRate": 0.0579465541490858,
+        "expectedQty": 150.0,
+        "expectedCost": 1363636.3636363635
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "requestPlus",
+        "expectedQty"
+      ]
+    },
+    {
+      "name": "홀리데이패키지",
+      "note": "",
+      "values": {
+        "salePrice": 129000.0,
+        "supplyPrice": 109650.0,
+        "shippingCost": 4000.0,
+        "feeRate": 0.15,
+        "existingSubsidy": -12900.0,
+        "cost": 87720.0,
+        "realCost": 100620.0,
+        "marginAmount": 5030.0,
+        "requestMinus": 0.0,
+        "finalMargin": 5030.0,
+        "finalMarginRate": 0.045873233014135886,
+        "expectedQty": 150.0,
+        "expectedCost": 0.0
+      },
+      "lockedFields": [
+        "salePrice",
+        "shippingCost",
+        "feeRate",
+        "existingSubsidy",
+        "cost",
+        "expectedQty"
+      ]
+    }
+  ]
+}
