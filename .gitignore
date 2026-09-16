@@ -1,0 +1,67 @@
+# ---- Visual Studio / local IDE state ----
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+*.ncb
+*.opendb
+
+# ---- .NET / WPF build output ----
+bin/
+obj/
+**/bin/
+**/obj/
+
+# ---- Native (C++) build output and intermediates ----
+x64/
+x86/
+Win32/
+ARM64/
+Debug/
+Release/
+**/x64/
+**/x86/
+**/Win32/
+**/ARM64/
+**/Debug/
+**/Release/
+*.aps
+*.idb
+*.ilk
+*.iobj
+*.ipch
+*.ipdb
+*.lastbuildstate
+*.log
+*.obj
+*.pch
+*.pdb
+*.recipe
+*.tlog
+
+# ---- dotnet publish output (self-contained, regenerate with installer/build_installer.ps1) ----
+publish/
+
+# ---- Installer build output (regenerate with installer/build_installer.ps1) ----
+installer/out/
+installer/install/
+installer/install.zip
+installer/.wix/
+*.msi
+*.wixobj
+*.wixpdb
+*.cab
+
+# ---- User-local runtime data (never part of source) ----
+# 실제 행사 데이터/채널·품목 목록은 %LOCALAPPDATA%\PriceCalcApp\ 에 저장되며 이 저장소 밖에 있다.
+
+# ---- OS / temporary files ----
+Thumbs.db
+Desktop.ini
+*.tmp
+*.cache

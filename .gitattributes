@@ -1,0 +1,11 @@
+# 텍스트 파일은 커밋 시 LF로 정규화하고, 체크아웃 시에는 OS 기본값을 따른다.
+* text=auto
+
+# 바이너리로 취급해서 줄바꿈 변환/diff 대상에서 제외.
+*.docx binary
+*.xlsx binary
+*.rtf binary
+*.msi binary
+*.dll binary
+*.exe binary
+*.pdb binary
