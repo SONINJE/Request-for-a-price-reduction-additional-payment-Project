@@ -13,10 +13,10 @@ namespace WpfPriceApp
 
         private void EventFile_DoubleClick(object sender, RoutedEventArgs e)
         {
-            if (sender is ListBoxItem item && item.Content is string path &&
+            if (sender is ListBoxItem item && item.Content is EventListItem entry &&
                 DataContext is MainViewModel vm)
             {
-                vm.LoadEvent(path);
+                vm.LoadEvent(entry.FilePath);
             }
         }
     }

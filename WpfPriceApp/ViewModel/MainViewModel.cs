@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -19,8 +21,9 @@ namespace WpfPriceApp.ViewModel
 
         public string EventsFolder { get; }
         private readonly string _masterDataFilePath;
+        private List<string> _allEventFilePaths = new();
 
-        public ObservableCollection<string> EventFiles { get; } = new();
+        public ObservableCollection<EventListItem> EventFiles { get; } = new();
         public ObservableCollection<ProductRowViewModel> Rows { get; } = new();
         public ObservableCollection<FieldEditorViewModel> FieldEditors { get; } = new();
 
@@ -54,6 +57,15 @@ namespace WpfPriceApp.ViewModel
             DateTime.TryParseExact(s, DateFormat, null, System.Globalization.DateTimeStyles.None, out var d) ? d : null;
         private static string FormatDate(DateTime? d) => d?.ToString(DateFormat) ?? "";
 
+        /// <summary>왼쪽 행사 목록 조회 기준 날짜. 기본값은 오늘 — 이 날짜가 기간 안에 든 행사만 보여준다.
+        /// null 로 지우면(= "전체 보기") 모든 행사를 보여준다.</summary>
+        private DateTime? _filterDate = DateTime.Today;
+        public DateTime? FilterDate
+        {
+            get => _filterDate;
+            set { _filterDate = value; OnPropertyChanged(nameof(FilterDate)); ApplyEventFilter(); }
+        }
+
         public string Memo
         {
             get => _currentEvent.Memo;
@@ -65,6 +77,13 @@ namespace WpfPriceApp.ViewModel
         {
             get => _selectedRow;
             set { _selectedRow = value; OnPropertyChanged(nameof(SelectedRow)); RebuildFieldEditors(); }
+        }
+
+        private EventListItem? _selectedEventFile;
+        public EventListItem? SelectedEventFile
+        {
+            get => _selectedEventFile;
+            set { _selectedEventFile = value; OnPropertyChanged(nameof(SelectedEventFile)); }
         }
 
         private string _statusMessage = "행사를 새로 만들거나 왼쪽 목록에서 불러오세요.";
@@ -93,6 +112,10 @@ namespace WpfPriceApp.ViewModel
         public RelayCommand ExportCsvCommand { get; }
         public RelayCommand RefreshListCommand { get; }
         public RelayCommand ManageMasterDataCommand { get; }
+        public RelayCommand ShowAllEventsCommand { get; }
+        public RelayCommand DownloadEventCommand { get; }
+        public RelayCommand OpenEventsFolderCommand { get; }
+        public RelayCommand DeleteEventFileCommand { get; }
 
         public MainViewModel()
         {
@@ -121,6 +144,10 @@ namespace WpfPriceApp.ViewModel
             ExportCsvCommand = new RelayCommand(_ => ExportCsv());
             RefreshListCommand = new RelayCommand(_ => RefreshEventList());
             ManageMasterDataCommand = new RelayCommand(_ => ManageMasterData());
+            ShowAllEventsCommand = new RelayCommand(_ => FilterDate = null);
+            DownloadEventCommand = new RelayCommand(_ => DownloadEvent());
+            OpenEventsFolderCommand = new RelayCommand(_ => OpenEventsFolder());
+            DeleteEventFileCommand = new RelayCommand(_ => DeleteEventFile(), _ => SelectedEventFile != null);
 
             RefreshEventList();
         }
@@ -200,9 +227,91 @@ namespace WpfPriceApp.ViewModel
 
         public void RefreshEventList()
         {
+            _allEventFilePaths = Directory.GetFiles(EventsFolder, "*.json").OrderBy(f => f).ToList();
+            ApplyEventFilter();
+        }
+
+        private void ApplyEventFilter()
+        {
             EventFiles.Clear();
-            foreach (var f in Directory.GetFiles(EventsFolder, "*.json").OrderBy(f => f))
-                EventFiles.Add(f);
+            foreach (var path in _allEventFilePaths)
+            {
+                var item = PeekEvent(path);
+                if (FilterDate == null || MatchesFilterDate(item)) EventFiles.Add(item);
+            }
+        }
+
+        private bool MatchesFilterDate(EventListItem item)
+        {
+            if (FilterDate == null) return true;
+            if (item.StartDate == null && item.EndDate == null) return true; // 기간 미지정 행사는 항상 보여준다
+            if (item.StartDate != null && item.EndDate != null)
+                return FilterDate >= item.StartDate && FilterDate <= item.EndDate;
+            if (item.StartDate != null) return FilterDate >= item.StartDate;
+            return FilterDate <= item.EndDate;
+        }
+
+        /// <summary>목록 표시/필터링용으로 행사 이름과 기간만 가볍게 미리 읽는다 (엔진 DLL을 거치지 않음).</summary>
+        private static EventListItem PeekEvent(string path)
+        {
+            string name = Path.GetFileNameWithoutExtension(path);
+            try
+            {
+                using var doc = JsonDocument.Parse(File.ReadAllText(path));
+                var root = doc.RootElement;
+                if (root.TryGetProperty("eventName", out var n) && !string.IsNullOrWhiteSpace(n.GetString()))
+                    name = n.GetString()!;
+                DateTime? start = root.TryGetProperty("startDate", out var s) ? ParseDate(s.GetString() ?? "") : null;
+                DateTime? end = root.TryGetProperty("endDate", out var e) ? ParseDate(e.GetString() ?? "") : null;
+                return new EventListItem(path, name, start, end);
+            }
+            catch
+            {
+                return new EventListItem(path, name, null, null);
+            }
+        }
+
+        /// <summary>행사(JSON 파일)를 삭제한다. 되돌릴 수 없는 작업이므로 매번 비밀번호를 확인한다.</summary>
+        private void DeleteEventFile()
+        {
+            if (SelectedEventFile == null) return;
+
+            var confirm = MessageBox.Show(
+                $"'{SelectedEventFile.DisplayName}' 행사를 삭제하시겠습니까?\n이 작업은 되돌릴 수 없습니다.",
+                "행사 삭제", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if (confirm != MessageBoxResult.Yes) return;
+
+            var pwd = new Views.PasswordDialog("삭제 확인", "행사를 삭제하려면 비밀번호를 입력하세요.", AppConfig.Password)
+            { Owner = Application.Current.MainWindow };
+            if (pwd.ShowDialog() != true) return;
+
+            string path = SelectedEventFile.FilePath;
+            try
+            {
+                File.Delete(path);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("삭제하지 못했습니다.\n" + ex.Message, "오류",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (string.Equals(_currentFilePath, path, StringComparison.OrdinalIgnoreCase))
+            {
+                _currentFilePath = null;
+                _currentEvent = new EventFile();
+                Rows.Clear();
+                FieldEditors.Clear();
+                SelectedRow = null;
+                OnPropertyChanged(nameof(EventName));
+                OnPropertyChanged(nameof(StartDate));
+                OnPropertyChanged(nameof(EndDate));
+                OnPropertyChanged(nameof(Memo));
+            }
+            SelectedEventFile = null;
+            RefreshEventList();
+            StatusMessage = "행사를 삭제했습니다.";
         }
 
         private void NewEvent()
@@ -285,6 +394,53 @@ namespace WpfPriceApp.ViewModel
             foreach (char c in Path.GetInvalidFileNameChars())
                 name = name.Replace(c, '_');
             return string.IsNullOrWhiteSpace(name) ? "새행사" : name;
+        }
+
+        /// <summary>팀원과 공유하기 쉽도록, 저장된 행사 JSON을 원하는 위치(기본: 바탕화면)로 복사한다.</summary>
+        private void DownloadEvent()
+        {
+            if (Rows.Count == 0 && string.IsNullOrEmpty(_currentFilePath))
+            {
+                StatusMessage = "다운로드할 행사가 없습니다. 먼저 상품을 추가하고 저장하세요.";
+                return;
+            }
+
+            // 공유본이 최신 상태를 반영하도록 먼저 저장한다.
+            SaveEvent(false);
+            if (string.IsNullOrEmpty(_currentFilePath)) return; // 저장을 취소한 경우
+
+            var dlg = new SaveFileDialog
+            {
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory),
+                FileName = Path.GetFileName(_currentFilePath),
+                Filter = "행사 JSON 파일 (*.json)|*.json"
+            };
+            if (dlg.ShowDialog() != true) return;
+
+            try
+            {
+                File.Copy(_currentFilePath, dlg.FileName, overwrite: true);
+                StatusMessage = "다운로드했습니다: " + dlg.FileName;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("다운로드하지 못했습니다.\n" + ex.Message, "오류",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        /// <summary>행사 JSON이 실제로 저장되는 폴더를 탐색기로 연다 (%LOCALAPPDATA%\PriceCalcApp\Events).</summary>
+        private void OpenEventsFolder()
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo { FileName = EventsFolder, UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("폴더를 열지 못했습니다.\n" + ex.Message, "오류",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         // ---------------- 상품(행) 추가/삭제 ----------------
