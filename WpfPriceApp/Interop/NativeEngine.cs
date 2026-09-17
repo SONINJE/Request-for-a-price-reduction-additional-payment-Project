@@ -20,9 +20,6 @@ namespace WpfPriceApp.Interop
 
         [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
         internal static extern int PC_LoadEvent(byte[] filePathUtf8, byte[] outBuffer, int outBufferSize);
-
-        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
-        internal static extern int PC_ComputeTotals(byte[] rowsJsonUtf8, byte[] outBuffer, int outBufferSize);
     }
 
     /// <summary>
@@ -72,12 +69,6 @@ namespace WpfPriceApp.Interop
         {
             var pathBytes = Utf8(filePath);
             return CallWithGrowingBuffer((buf, size) => NativeMethods.PC_LoadEvent(pathBytes, buf, size));
-        }
-
-        public static string ComputeTotals(string rowsJsonArray)
-        {
-            var bytes = Utf8(rowsJsonArray);
-            return CallWithGrowingBuffer((buf, size) => NativeMethods.PC_ComputeTotals(bytes, buf, size));
         }
     }
 }

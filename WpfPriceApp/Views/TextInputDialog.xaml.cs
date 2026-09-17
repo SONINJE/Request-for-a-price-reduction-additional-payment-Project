@@ -10,6 +10,7 @@ namespace WpfPriceApp.Views
         {
             InitializeComponent();
             Title = title;
+            TitleText.Text = title;
             PromptText.Text = prompt;
             InputBox.Text = defaultValue;
             Loaded += (_, _) => { InputBox.Focus(); InputBox.SelectAll(); };

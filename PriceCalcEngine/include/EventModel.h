@@ -11,9 +11,11 @@ namespace pricecalc {
 
 struct ProductRow {
     std::string name;                       // 상품명(품목)
-    std::string channel;                    // 판매 채널 (예: "11번가", "SK스토아")
+    std::string sku;                        // SKU (품목 마스터에서 상품명으로 조회, 필요시 직접 수정 가능)
+    std::string channel;                    // 판매 채널 (품목 마스터에 상품별로 미리 지정됨)
+    std::string eventType;                  // 행사유형 (자유 텍스트 태그, 예: "버츄얼", "이마트팩")
     std::string note;                       // 비고 (예: 비노출/노출/대량구매 등 자유 텍스트)
-    std::map<std::string, double> values;   // 14개 숫자 필드
+    std::map<std::string, double> values;   // 숫자 필드 (RowEngine.h Field 참고)
     std::set<std::string> lockedFields;     // 사용자가 직접 입력(고정)한 필드 목록
 };
 

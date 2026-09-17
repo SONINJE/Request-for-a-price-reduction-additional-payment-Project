@@ -27,10 +27,9 @@ namespace WpfPriceApp.ViewModel
         public ObservableCollection<ProductRowViewModel> Rows { get; } = new();
         public ObservableCollection<FieldEditorViewModel> FieldEditors { get; } = new();
 
-        /// <summary>상품 추가/편집 시 고를 수 있는 채널 목록 (MasterData.json 에 저장됨).</summary>
-        public ObservableCollection<string> Channels { get; } = new();
-        /// <summary>상품 추가 시 고를 수 있는 품목(상품명) 목록 (MasterData.json 에 저장됨).</summary>
-        public ObservableCollection<string> Items { get; } = new();
+        /// <summary>품목(SKU) 마스터 — 상품명으로 SKU/매입가/기존정산액/채널을 자동으로 채워주는 조회표.
+        /// MasterData.json 에 저장됨. 실제 엑셀의 "Master" 시트에 대응.</summary>
+        public ObservableCollection<MasterProduct> MasterProducts { get; } = new();
 
         private EventFile _currentEvent = new();
         private string? _currentFilePath;
@@ -57,13 +56,21 @@ namespace WpfPriceApp.ViewModel
             DateTime.TryParseExact(s, DateFormat, null, System.Globalization.DateTimeStyles.None, out var d) ? d : null;
         private static string FormatDate(DateTime? d) => d?.ToString(DateFormat) ?? "";
 
-        /// <summary>왼쪽 행사 목록 조회 기준 날짜. 기본값은 오늘 — 이 날짜가 기간 안에 든 행사만 보여준다.
-        /// null 로 지우면(= "전체 보기") 모든 행사를 보여준다.</summary>
-        private DateTime? _filterDate = DateTime.Today;
-        public DateTime? FilterDate
+        /// <summary>왼쪽 행사 목록 조회 기준 날짜 범위. 기본값은 오늘 하루 — 이 범위와 행사 기간이
+        /// 겹치는 행사만 보여준다. 한쪽만 지정하면 그쪽으로 열린 범위로, 둘 다 지우면(= "전체 보기")
+        /// 모든 행사를 보여준다.</summary>
+        private DateTime? _filterStartDate = DateTime.Today;
+        public DateTime? FilterStartDate
         {
-            get => _filterDate;
-            set { _filterDate = value; OnPropertyChanged(nameof(FilterDate)); ApplyEventFilter(); }
+            get => _filterStartDate;
+            set { _filterStartDate = value; OnPropertyChanged(nameof(FilterStartDate)); ApplyEventFilter(); }
+        }
+
+        private DateTime? _filterEndDate = DateTime.Today;
+        public DateTime? FilterEndDate
+        {
+            get => _filterEndDate;
+            set { _filterEndDate = value; OnPropertyChanged(nameof(FilterEndDate)); ApplyEventFilter(); }
         }
 
         public string Memo
@@ -144,7 +151,7 @@ namespace WpfPriceApp.ViewModel
             ExportCsvCommand = new RelayCommand(_ => ExportCsv());
             RefreshListCommand = new RelayCommand(_ => RefreshEventList());
             ManageMasterDataCommand = new RelayCommand(_ => ManageMasterData());
-            ShowAllEventsCommand = new RelayCommand(_ => FilterDate = null);
+            ShowAllEventsCommand = new RelayCommand(_ => { _filterStartDate = null; _filterEndDate = null; OnPropertyChanged(nameof(FilterStartDate)); OnPropertyChanged(nameof(FilterEndDate)); ApplyEventFilter(); });
             DownloadEventCommand = new RelayCommand(_ => DownloadEvent());
             OpenEventsFolderCommand = new RelayCommand(_ => OpenEventsFolder());
             DeleteEventFileCommand = new RelayCommand(_ => DeleteEventFile(), _ => SelectedEventFile != null);
@@ -164,7 +171,7 @@ namespace WpfPriceApp.ViewModel
             }
         }
 
-        // ---------------- 채널/품목 마스터 목록 ----------------
+        // ---------------- 품목(SKU) 마스터 ----------------
 
         private void LoadMasterData()
         {
@@ -181,46 +188,36 @@ namespace WpfPriceApp.ViewModel
             {
                 data = new();
             }
-            Channels.Clear();
-            foreach (var c in data.Channels) Channels.Add(c);
-            Items.Clear();
-            foreach (var i in data.Items) Items.Add(i);
+            MasterProducts.Clear();
+            foreach (var p in data.Products) MasterProducts.Add(p);
         }
 
         private void SaveMasterData()
         {
             try
             {
-                var data = new Models.MasterData
-                {
-                    Channels = Channels.ToList(),
-                    Items = Items.ToList(),
-                };
+                var data = new Models.MasterData { Products = MasterProducts.ToList() };
                 File.WriteAllText(_masterDataFilePath, JsonSerializer.Serialize(data, JsonOpts));
             }
             catch (Exception ex)
             {
-                MessageBox.Show("채널/품목 목록을 저장하지 못했습니다.\n" + ex.Message, "오류",
+                MessageBox.Show("품목 마스터를 저장하지 못했습니다.\n" + ex.Message, "오류",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         private void ManageMasterData()
         {
-            var dlg = new Views.MasterDataWindow(Channels, Items) { Owner = Application.Current.MainWindow };
+            var dlg = new Views.MasterDataWindow(MasterProducts) { Owner = Application.Current.MainWindow };
             dlg.ShowDialog();
             SaveMasterData();
         }
 
-        /// <summary>목록에 없는 새 채널/품목이면 추가해둔다 (상품 추가 다이얼로그에서 새로 입력한 경우).</summary>
-        private void RegisterIfNew(ObservableCollection<string> list, string value)
+        /// <summary>상품명으로 품목 마스터를 찾는다 (정확히 일치, 없으면 null).</summary>
+        private MasterProduct? FindMasterProduct(string name)
         {
-            if (string.IsNullOrWhiteSpace(value)) return;
-            if (!list.Contains(value))
-            {
-                list.Add(value);
-                SaveMasterData();
-            }
+            if (string.IsNullOrWhiteSpace(name)) return null;
+            return MasterProducts.FirstOrDefault(p => p.Name == name);
         }
 
         // ---------------- 행사 목록/불러오기/저장 ----------------
@@ -237,18 +234,24 @@ namespace WpfPriceApp.ViewModel
             foreach (var path in _allEventFilePaths)
             {
                 var item = PeekEvent(path);
-                if (FilterDate == null || MatchesFilterDate(item)) EventFiles.Add(item);
+                if (MatchesFilterRange(item)) EventFiles.Add(item);
             }
         }
 
-        private bool MatchesFilterDate(EventListItem item)
+        /// <summary>조회 날짜 범위(FilterStartDate~FilterEndDate)와 행사 기간이 겹치는지 확인한다.
+        /// 필터 쪽이 한쪽만 지정되어 있으면 그쪽으로 열린 범위로, 둘 다 비어 있으면(전체 보기) 항상 true.</summary>
+        private bool MatchesFilterRange(EventListItem item)
         {
-            if (FilterDate == null) return true;
+            if (FilterStartDate == null && FilterEndDate == null) return true;
             if (item.StartDate == null && item.EndDate == null) return true; // 기간 미지정 행사는 항상 보여준다
-            if (item.StartDate != null && item.EndDate != null)
-                return FilterDate >= item.StartDate && FilterDate <= item.EndDate;
-            if (item.StartDate != null) return FilterDate >= item.StartDate;
-            return FilterDate <= item.EndDate;
+
+            // 행사 기간을 [eStart, eEnd] 로, 필터 범위를 [fStart, fEnd] 로 두고 구간이 겹치는지 확인.
+            // 한쪽이 비어 있으면 그 방향으로 무한히 열린 범위로 취급한다.
+            DateTime eStart = item.StartDate ?? DateTime.MinValue;
+            DateTime eEnd = item.EndDate ?? DateTime.MaxValue;
+            DateTime fStart = FilterStartDate ?? DateTime.MinValue;
+            DateTime fEnd = FilterEndDate ?? DateTime.MaxValue;
+            return eStart <= fEnd && fStart <= eEnd;
         }
 
         /// <summary>목록 표시/필터링용으로 행사 이름과 기간만 가볍게 미리 읽는다 (엔진 DLL을 거치지 않음).</summary>
@@ -276,10 +279,10 @@ namespace WpfPriceApp.ViewModel
         {
             if (SelectedEventFile == null) return;
 
-            var confirm = MessageBox.Show(
-                $"'{SelectedEventFile.DisplayName}' 행사를 삭제하시겠습니까?\n이 작업은 되돌릴 수 없습니다.",
-                "행사 삭제", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-            if (confirm != MessageBoxResult.Yes) return;
+            //var confirm = MessageBox.Show(
+            //    $"'{SelectedEventFile.DisplayName}' 행사를 삭제하시겠습니까?\n이 작업은 되돌릴 수 없습니다.",
+            //    "행사 삭제", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            //if (confirm != MessageBoxResult.Yes) return;
 
             var pwd = new Views.PasswordDialog("삭제 확인", "행사를 삭제하려면 비밀번호를 입력하세요.", AppConfig.Password)
             { Owner = Application.Current.MainWindow };
@@ -447,23 +450,38 @@ namespace WpfPriceApp.ViewModel
 
         private void AddProduct()
         {
-            var dlg = new Views.AddProductDialog(Items, Channels) { Owner = Application.Current.MainWindow };
-            if (dlg.ShowDialog() != true) return;
+            // 이 창에서 품목 마스터를 직접 보고 추가/삭제도 할 수 있다 — 같은 컬렉션을 넘겨서
+            // 창 안에서 바뀐 내용이 곧바로 반영되게 하고, 닫히면(취소해도) 파일로 저장해둔다.
+            var dlg = new Views.AddProductDialog(MasterProducts) { Owner = Application.Current.MainWindow };
+            bool ok = dlg.ShowDialog() == true;
+            SaveMasterData();
+            if (!ok) return;
 
-            var row = new ProductRow { Name = dlg.ItemName, Channel = dlg.Channel };
+            var row = new ProductRow { Name = dlg.ItemName, EventType = dlg.EventType, Note = dlg.Note };
             foreach (var key in FieldNames.DefaultLocked)
             {
                 row.Values[key] = 0;
                 row.LockedFields.Add(key);
             }
+
+            // 품목 마스터에 있는 상품이면 SKU/채널/매입가/기존정산액(지원금_S)을 자동으로 채운다
+            // (원본 엑셀의 VLOOKUP과 같은 역할). 없으면 빈 값으로 두고 나중에 직접 입력하면 된다.
+            var master = FindMasterProduct(row.Name);
+            if (master != null)
+            {
+                row.Sku = master.Sku;
+                row.Channel = master.Channel;
+                row.Values[FieldNames.PurchasePrice] = master.PurchasePrice;
+                row.Values[FieldNames.ExistingSettlement] = master.SubsidySpot;
+            }
+
             var vm = new ProductRowViewModel(row);
             Rows.Add(vm);
             SelectedRow = vm;
 
-            RegisterIfNew(Items, row.Name);
-            RegisterIfNew(Channels, row.Channel);
-
-            StatusMessage = $"'{row.Name}' 상품을 추가했습니다. 값을 입력한 뒤 계산하세요.";
+            StatusMessage = master != null
+                ? $"'{row.Name}' 상품을 추가했습니다 (품목 마스터에서 SKU/채널/매입가 자동 입력). 값을 확인하고 계산하세요."
+                : $"'{row.Name}' 상품을 추가했습니다. 품목 마스터에 없는 상품이라 SKU/채널/매입가를 직접 입력해야 합니다.";
         }
 
         private void DeleteProduct()
@@ -572,16 +590,12 @@ namespace WpfPriceApp.ViewModel
             try
             {
                 using var writer = new StreamWriter(dlg.FileName, false, new UTF8Encoding(true)); // BOM 포함 (엑셀 한글 호환)
-                var headers = new[] { "상품명", "채널" }
-                    .Concat(FieldNames.All.Select(f => f.Label))
-                    .Concat(new[] { "비고" });
-                writer.WriteLine(string.Join(",", headers.Select(CsvEscape)));
+                // 컬럼 순서는 원본 엑셀과 동일하게 GridColumns 정의 하나를 그대로 따른다 (그리드 표시 순서와도 일치).
+                writer.WriteLine(string.Join(",", GridColumns.All.Select(c => CsvEscape(c.Header))));
 
                 foreach (var r in Rows)
                 {
-                    var cells = new[] { r.Name, r.Channel }
-                        .Concat(FieldNames.All.Select(f => r.Model.GetValue(f.Key).ToString("0.####")))
-                        .Concat(new[] { r.Note });
+                    var cells = GridColumns.All.Select(c => c.GetCsvText(r));
                     writer.WriteLine(string.Join(",", cells.Select(CsvEscape)));
                 }
                 StatusMessage = "CSV로 내보냈습니다: " + dlg.FileName;

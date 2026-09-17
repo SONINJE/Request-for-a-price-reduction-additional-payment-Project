@@ -30,22 +30,52 @@ static std::wstring Utf8PathToWide(const std::string& utf8Path) {
 static json RowToJson(const ProductRow& row) {
     json j;
     j["name"] = row.name;
+    j["sku"] = row.sku;
     j["channel"] = row.channel;
+    j["eventType"] = row.eventType;
     j["note"] = row.note;
     j["values"] = row.values;
     j["lockedFields"] = row.lockedFields;
     return j;
 }
 
+// 예전 버전(2025-09 이전)의 필드 이름을 새 이름으로 옮겨준다 — 구버전으로 저장된
+// 행사 파일을 열었을 때 값/잠금 상태가 조용히 사라지지 않도록 하는 하위호환 처리.
+// (예상수량/예상추가비용은 새 구조에 없는 필드라 그대로 버려진다.)
+static const std::pair<const char*, const char*> kLegacyFieldRenames[] = {
+    {"existingSubsidy", "existingSettlement"},
+    {"cost", "purchasePrice"},
+    {"realCost", "settledPurchasePrice"},
+};
+
+static void MigrateLegacyFieldNames(std::map<std::string, double>& values) {
+    for (const auto& [oldKey, newKey] : kLegacyFieldRenames) {
+        auto it = values.find(oldKey);
+        if (it != values.end() && values.find(newKey) == values.end()) {
+            values[newKey] = it->second;
+        }
+    }
+}
+
+static void MigrateLegacyLockedFields(std::set<std::string>& lockedFields) {
+    for (const auto& [oldKey, newKey] : kLegacyFieldRenames) {
+        if (lockedFields.count(oldKey)) lockedFields.insert(newKey);
+    }
+}
+
 static ProductRow RowFromJson(const json& j) {
     ProductRow row;
     row.name = j.value("name", "");
+    row.sku = j.value("sku", "");
     row.channel = j.value("channel", "");
+    row.eventType = j.value("eventType", "");
     row.note = j.value("note", "");
     if (j.contains("values"))
         for (auto& [k, v] : j.at("values").items()) row.values[k] = v.get<double>();
+    MigrateLegacyFieldNames(row.values);
     if (j.contains("lockedFields"))
         for (auto& v : j.at("lockedFields")) row.lockedFields.insert(v.get<std::string>());
+    MigrateLegacyLockedFields(row.lockedFields);
     return row;
 }
 

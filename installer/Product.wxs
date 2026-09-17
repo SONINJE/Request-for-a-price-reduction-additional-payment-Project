@@ -9,7 +9,7 @@
 
   <Package Name="판매가 인하 / 추가금 요청 관리 프로그램"
             Manufacturer="PriceCalcApp"
-            Version="1.4.2"
+            Version="2.2.0"
             UpgradeCode="4c3e4b93-c1e6-4575-bcd6-c5fe3606b837"
             Language="1042"
             Codepage="65001"

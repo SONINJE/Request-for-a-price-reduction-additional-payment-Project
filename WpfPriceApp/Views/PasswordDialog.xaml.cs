@@ -15,6 +15,7 @@ namespace WpfPriceApp.Views
         {
             InitializeComponent();
             Title = title;
+            TitleText.Text = title;
             PromptText.Text = prompt;
             _expectedPassword = expectedPassword;
             Loaded += (_, _) => PasswordBox.Focus();

@@ -25,6 +25,3 @@ PC_API int PC_SaveEvent(const char* filePathUtf8, const char* eventJsonUtf8,
 
 // 행사 JSON 파일을 읽어 그대로 EventFile JSON 문자열로 돌려준다.
 PC_API int PC_LoadEvent(const char* filePathUtf8, char* outBuffer, int outBufferSize);
-
-// 여러 행의 합계(예상수량/예상추가비용) 계산. rowsJsonUtf8 은 [{values...}, ...] 배열.
-PC_API int PC_ComputeTotals(const char* rowsJsonUtf8, char* outBuffer, int outBufferSize);

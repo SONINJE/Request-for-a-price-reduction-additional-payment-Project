@@ -21,61 +21,65 @@ struct Formula {
     std::function<double(const std::vector<double>&)> residual;
 };
 
+// 역산 제약 전파 그래프(자유도 8 = 변수 16 - 공식 8). 기지원금(SupportAmount)은
+// ROUNDUP 때문에 역으로 풀 수 없어 여기 포함하지 않고 SolveRow 마지막에 순방향으로만 계산한다.
 const std::vector<Formula>& AllFormulas() {
     static const std::vector<Formula> formulas = {
-        // 공급가 = 판매가 * (1 - 수수료)
+        // 채널>공급가 = 판매가 * (1 - 수수료)
         {
-            "공급가 = 판매가*(1-수수료)",
+            "채널>공급가 = 판매가*(1-수수료)",
             { SalePrice, FeeRate, SupplyPrice },
             [](int unknown, const std::vector<double>& v) -> std::optional<double> {
-                double B = v[0], E = v[1], C = v[2];
-                if (unknown == 0) { // B = C/(1-E)
-                    if (std::fabs(1.0 - E) < EPS) return std::nullopt;
-                    return C / (1.0 - E);
-                } else if (unknown == 1) { // E = 1 - C/B
-                    if (std::fabs(B) < EPS) return std::nullopt;
-                    return 1.0 - C / B;
-                } else { // C = B*(1-E)
-                    return B * (1.0 - E);
+                double SP = v[0], FR = v[1], SU = v[2];
+                if (unknown == 0) {
+                    if (std::fabs(1.0 - FR) < EPS) return std::nullopt;
+                    return SU / (1.0 - FR);
+                } else if (unknown == 1) {
+                    if (std::fabs(SP) < EPS) return std::nullopt;
+                    return 1.0 - SU / SP;
+                } else {
+                    return SP * (1.0 - FR);
                 }
             },
-            [](const std::vector<double>& v) {
-                return v[2] - v[0] * (1.0 - v[1]);
-            }
+            [](const std::vector<double>& v) { return v[2] - v[0] * (1.0 - v[1]); }
         },
-        // 실원가 = 원가 - 기존지원금
+        // 정산액포함매입가(+) = 매입가(+) - 기존정산액(+)
         {
-            "실원가 = 원가-기존지원금",
-            { Cost, ExistingSubsidy, RealCost },
+            "정산액포함매입가(+) = 매입가(+)-기존정산액(+)",
+            { PurchasePrice, ExistingSettlement, SettledPurchasePrice },
             [](int unknown, const std::vector<double>& v) -> std::optional<double> {
-                double G = v[0], F = v[1], H = v[2];
-                if (unknown == 0) return H + F;      // G = H+F
-                if (unknown == 1) return G - H;      // F = G-H
-                return G - F;                        // H = G-F
+                double PP = v[0], ES = v[1], SPP = v[2];
+                if (unknown == 0) return SPP + ES;
+                if (unknown == 1) return PP - SPP;
+                return PP - ES;
             },
             [](const std::vector<double>& v) { return v[2] - (v[0] - v[1]); }
         },
-        // 마진액 = 공급가 - 실원가 - 배송비
+        // 마진액 = 채널>공급가 - 정산액포함매입가(+) - 배송비 - 캡슐금액 - 쿠폰액 분담 쿠폰
         {
-            "마진액 = 공급가-실원가-배송비",
-            { SupplyPrice, RealCost, ShippingCost, MarginAmount },
+            "마진액 = 공급가-정산액포함매입가-배송비-캡슐금액-쿠폰액",
+            { SupplyPrice, SettledPurchasePrice, ShippingCost, CapsuleAmount, CouponAmount, MarginAmount },
             [](int unknown, const std::vector<double>& v) -> std::optional<double> {
-                double C = v[0], H = v[1], D = v[2], I = v[3];
-                if (unknown == 0) return I + H + D;  // C
-                if (unknown == 1) return C - I - D;  // H
-                if (unknown == 2) return C - I - H;  // D
-                return C - H - D;                    // I
+                double SU = v[0], SPP = v[1], SH = v[2], CA = v[3], CO = v[4], MA = v[5];
+                switch (unknown) {
+                    case 0: return MA + SPP + SH + CA + CO;   // SU
+                    case 1: return SU - MA - SH - CA - CO;    // SPP
+                    case 2: return SU - SPP - CA - CO - MA;   // SH
+                    case 3: return SU - SPP - SH - CO - MA;   // CA
+                    case 4: return SU - SPP - SH - CA - MA;   // CO
+                    default: return SU - SPP - SH - CA - CO;  // MA
+                }
             },
-            [](const std::vector<double>& v) { return v[3] - (v[0] - v[1] - v[2]); }
+            [](const std::vector<double>& v) { return v[5] - (v[0] - v[1] - v[2] - v[3] - v[4]); }
         },
         // 추가요청금액(-) = 추가요청금액(+) / 1.1   (부가세 제외 환산)
         {
             "추가요청금액(-) = 추가요청금액(+)/1.1",
             { RequestPlus, RequestMinus },
             [](int unknown, const std::vector<double>& v) -> std::optional<double> {
-                double J = v[0], K = v[1];
-                if (unknown == 0) return K * 1.1;    // J
-                return J / 1.1;                      // K
+                double RP = v[0], RM = v[1];
+                if (unknown == 0) return RM * 1.1;
+                return RP / 1.1;
             },
             [](const std::vector<double>& v) { return v[1] - v[0] / 1.1; }
         },
@@ -84,59 +88,87 @@ const std::vector<Formula>& AllFormulas() {
             "최종마진액 = 추가요청금액(+)+마진액",
             { RequestPlus, MarginAmount, FinalMargin },
             [](int unknown, const std::vector<double>& v) -> std::optional<double> {
-                double J = v[0], I = v[1], L = v[2];
-                if (unknown == 0) return L - I;      // J
-                if (unknown == 1) return L - J;      // I
-                return J + I;                        // L
+                double RP = v[0], MA = v[1], FM = v[2];
+                if (unknown == 0) return FM - MA;
+                if (unknown == 1) return FM - RP;
+                return RP + MA;
             },
             [](const std::vector<double>& v) { return v[2] - (v[0] + v[1]); }
         },
-        // 최종마진율 = 최종마진액 / 공급가
+        // 최종마진율 = 최종마진액 / 채널>공급가
         {
             "최종마진율 = 최종마진액/공급가",
             { FinalMargin, SupplyPrice, FinalMarginRate },
             [](int unknown, const std::vector<double>& v) -> std::optional<double> {
-                double L = v[0], C = v[1], M = v[2];
-                if (unknown == 0) return M * C;      // L
-                if (unknown == 1) { if (std::fabs(M) < EPS) return std::nullopt; return L / M; } // C
-                if (std::fabs(C) < EPS) return std::nullopt;
-                return L / C;                         // M
+                double FM = v[0], SU = v[1], FMR = v[2];
+                if (unknown == 0) return FMR * SU;
+                if (unknown == 1) { if (std::fabs(FMR) < EPS) return std::nullopt; return FM / FMR; }
+                if (std::fabs(SU) < EPS) return std::nullopt;
+                return FM / SU;
             },
             [](const std::vector<double>& v) {
                 if (std::fabs(v[1]) < EPS) return 0.0;
                 return v[2] - v[0] / v[1];
             }
         },
-        // 예상추가비용(-) = 추가요청금액(-) * 예상수량
+        // 본사(확인용)vat+ = 추가요청금액(+) + 기존정산액(+)
         {
-            "예상추가비용(-) = 추가요청금액(-)*예상수량",
-            { RequestMinus, ExpectedQty, ExpectedCost },
+            "본사(확인용)vat+ = 추가요청금액(+)+기존정산액(+)",
+            { RequestPlus, ExistingSettlement, HqCheckVatPlus },
             [](int unknown, const std::vector<double>& v) -> std::optional<double> {
-                double K = v[0], O = v[1], P = v[2];
-                if (unknown == 0) { if (std::fabs(O) < EPS) return std::nullopt; return P / O; }
-                if (unknown == 1) { if (std::fabs(K) < EPS) return std::nullopt; return P / K; }
-                return K * O;
+                double RP = v[0], ES = v[1], HP = v[2];
+                if (unknown == 0) return HP - ES;
+                if (unknown == 1) return HP - RP;
+                return RP + ES;
             },
-            [](const std::vector<double>& v) { return v[2] - v[0] * v[1]; }
+            [](const std::vector<double>& v) { return v[2] - (v[0] + v[1]); }
+        },
+        // 본사(확인용)vat- = 본사(확인용)vat+ / 1.1
+        {
+            "본사(확인용)vat- = 본사(확인용)vat+/1.1",
+            { HqCheckVatPlus, HqCheckVatMinus },
+            [](int unknown, const std::vector<double>& v) -> std::optional<double> {
+                double HP = v[0], HM = v[1];
+                if (unknown == 0) return HM * 1.1;
+                return HP / 1.1;
+            },
+            [](const std::vector<double>& v) { return v[1] - v[0] / 1.1; }
         },
     };
     return formulas;
 }
 
+// Excel ROUNDUP(x, -3) 과 동일: 0에서 먼 방향으로 1000 단위로 올림.
+double RoundUpTo1000(double x) {
+    if (x == 0.0) return 0.0;
+    double sign = x > 0 ? 1.0 : -1.0;
+    return sign * std::ceil(std::fabs(x) / 1000.0) * 1000.0;
+}
+
 } // anonymous namespace
 
-const std::vector<std::string>& AllNumericFields() {
+const std::vector<std::string>& SolvableFields() {
     static const std::vector<std::string> f = {
-        SalePrice, SupplyPrice, ShippingCost, FeeRate, ExistingSubsidy, Cost, RealCost,
-        MarginAmount, RequestPlus, RequestMinus, FinalMargin, FinalMarginRate,
-        ExpectedQty, ExpectedCost
+        SalePrice, SupplyPrice, ShippingCost, FeeRate, ExistingSettlement, PurchasePrice,
+        SettledPurchasePrice, CapsuleAmount, CouponAmount, MarginAmount, RequestPlus, RequestMinus,
+        FinalMargin, FinalMarginRate, HqCheckVatPlus, HqCheckVatMinus
     };
+    return f;
+}
+
+const std::vector<std::string>& AllNumericFields() {
+    static const std::vector<std::string> f = [] {
+        std::vector<std::string> v = SolvableFields();
+        v.push_back(SupportAmount);
+        return v;
+    }();
     return f;
 }
 
 const std::vector<std::string>& DefaultInputFields() {
     static const std::vector<std::string> f = {
-        SalePrice, ShippingCost, FeeRate, ExistingSubsidy, Cost, RequestPlus, ExpectedQty
+        SalePrice, ShippingCost, FeeRate, ExistingSettlement, PurchasePrice, RequestPlus,
+        CapsuleAmount, CouponAmount
     };
     return f;
 }
@@ -191,9 +223,17 @@ SolveResult SolveRow(const std::map<std::string, double>& valuesIn,
         }
     }
 
-    for (const auto& name : AllNumericFields()) {
+    for (const auto& name : SolvableFields()) {
         if (solved.count(name)) result.values[name] = values[name];
         else result.unresolved.insert(name);
+    }
+
+    // 기지원금은 역산 그래프 밖에서, 마진액/정산액포함매입가가 둘 다 풀렸을 때만 순방향으로 계산.
+    if (solved.count(MarginAmount) && solved.count(SettledPurchasePrice)) {
+        double supportAmount = RoundUpTo1000(std::fabs(values[MarginAmount]) + values[SettledPurchasePrice] * 0.05);
+        result.values[SupportAmount] = supportAmount;
+    } else {
+        result.unresolved.insert(SupportAmount);
     }
 
     result.ok = result.unresolved.empty() && result.conflicts.empty();
@@ -208,18 +248,6 @@ SolveResult SolveRow(const std::map<std::string, double>& valuesIn,
         result.message = oss.str();
     }
     return result;
-}
-
-void ComputeTotals(const std::vector<std::map<std::string, double>>& rows,
-                    double& outQtySum, double& outCostSum) {
-    outQtySum = 0.0;
-    outCostSum = 0.0;
-    for (const auto& r : rows) {
-        auto itQ = r.find(ExpectedQty);
-        auto itC = r.find(ExpectedCost);
-        if (itQ != r.end()) outQtySum += itQ->second;
-        if (itC != r.end()) outCostSum += itC->second;
-    }
 }
 
 } // namespace pricecalc

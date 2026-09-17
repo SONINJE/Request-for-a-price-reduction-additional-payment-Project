@@ -11,8 +11,14 @@ namespace WpfPriceApp.Models
         [JsonPropertyName("name")]
         public string Name { get; set; } = "";
 
+        [JsonPropertyName("sku")]
+        public string Sku { get; set; } = "";
+
         [JsonPropertyName("channel")]
         public string Channel { get; set; } = "";
+
+        [JsonPropertyName("eventType")]
+        public string EventType { get; set; } = "";
 
         [JsonPropertyName("note")]
         public string Note { get; set; } = "";

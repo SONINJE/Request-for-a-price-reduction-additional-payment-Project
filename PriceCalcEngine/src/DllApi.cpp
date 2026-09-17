@@ -78,23 +78,3 @@ int PC_LoadEvent(const char* filePathUtf8, char* outBuffer, int outBufferSize) {
         return -1;
     }
 }
-
-int PC_ComputeTotals(const char* rowsJsonUtf8, char* outBuffer, int outBufferSize) {
-    try {
-        auto arr = json::parse(rowsJsonUtf8 ? rowsJsonUtf8 : "[]");
-        std::vector<std::map<std::string, double>> rows;
-        for (auto& rj : arr) {
-            std::map<std::string, double> row;
-            for (auto& [k, v] : rj.items()) row[k] = v.get<double>();
-            rows.push_back(row);
-        }
-        double qtySum = 0, costSum = 0;
-        ComputeTotals(rows, qtySum, costSum);
-        json resp;
-        resp["expectedQty"] = qtySum;
-        resp["expectedCost"] = costSum;
-        return WriteOut(resp.dump(), outBuffer, outBufferSize);
-    } catch (const std::exception&) {
-        return -1;
-    }
-}
